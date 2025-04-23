@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "../assets/image.png";
 import photo from "../assets/photo.jpeg"
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineLinkedin } from "react-icons/ai";
