@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+@layer base {
+    :root{
+        --background:#09090b;
+        --border:#7f1d1d;
+        --foreground:#3994c1;
+        --bg:#020617;
+       
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+}
+
+.heading{
+    font-family: "Roboto", sans-serif;
+     background:linear-gradient(to bottom , rgba(255,255,255,1),rgba(255,255,255,0.8),rgba(255,255,255,0));
+ }
+ 
+.metalic-text{
+    /* position: relative; */
+    background: linear-gradient(to bottom,
+    rgba(255,255,255,1),
+    rgba(255,255,255,0.7),
+    rgb(0, 0, 0) 90%
+    );
+    color: transparent; 
+    background-clip: text;
+    
+  }
+  /* .boldonse {
+    font-family: "Boldonse", system-ui;
+    font-weight: 100;
+    font-style: normal;
+  }
+   */
+
+  .oswald{
+    font-family: "Oswald", sans-serif;
+  
+  }
+  .textColor{
+    color:  #1db3c1 ;
+  }
+.overlay-model{
+  background: linear-gradient(to bottom,
+  rgba(0,0,0,0.6) 70%,var(--background)
+  /* rgba(0,0,0,1) */
+
+  /* rgba(0,0,0,0.5) 100% */
+  );
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.btn-1 {
+  border: none;
+  background-color: #050505;
+  box-shadow: 0 0 5px #059669;
+}
+.btn-1:hover {
+  background-color: antiquewhite;
+   box-shadow: 0 0 10px #059669, 0 0 20px #059669, 0 0 20px  inset;
+}
+.neo-btn:hover {
+  background: #f8fafc;
+  box-shadow: 0 0 5px #f8fafc, 0 0 25px #f8fafc, 0 0 50px #f8fafc, 0 0 200px #f8fafc;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.bg-color {
+  --background-color:#292524 ;
+  --button-color:#111827;
+}
+
+
+.btn-2:hover {
+  background: #059669;
+  box-shadow: 10px 10px 10px #059669, 10px 10px 40px #059669, 0 0 80px #059669;
+  transition-delay: 0s;
+}
+
