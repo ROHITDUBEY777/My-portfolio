@@ -7,11 +7,13 @@ const Navbar = () => {
  
  
   const [Menu,Setmenu] = useState(false);
+  const [clicked,setclicked]=useState(false);
   const handlescroll = (id) =>{
     const element = document.getElementById(id);
     if(element){
       element.scrollIntoView({behavior:'smooth'});
     }
+    <Setmenu className="opacity-0 hidden invisible" />
   }
  
   return (
@@ -19,7 +21,7 @@ const Navbar = () => {
             <p className='text-white flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p>
             
             
-            <ul className=' hidden md:flex md:flex-row  justify-between md:text-2xl lg:text-2xl left-0 items-center  gap-16  '>
+            <ul className=' hidden md:flex md:flex-row  justify-between md:text-3xl lg:text-3xl left-0 items-center  gap-16  '>
                 <li className="bg-gradient-to-b cursor-pointer opacity-70 hover:opacity-100 transition duration-300 " onClick={()=>handlescroll('Home')}  >
                 Home</li>
                 
@@ -48,15 +50,16 @@ const Navbar = () => {
                 Setmenu(!Menu)
               }>
               
-              <BiAlignRight className=' cursor-pointer '/>
+              <BiAlignRight className='  cursor-pointer '/>
               </button>
              </div>
-             <div className={`fixed   text-2xl z-10 backdrop-blur-2xl bg-white/30   flex flex-col   p-6 h-screen  top-8 right-4 duration-300 text-center items-center border transform transition-transform  ${Menu ? "opacity-100 scale-100 ":" opacity-0 hidden invisible"}`}>
+             <div onClick={()=>setclicked(!clicked)}   className={`fixed  bg-[#020617] text-2xl  z-40   backdrop-blur-2xl flex flex-col  p-6 h-screen  top-10 right-4 duration-300 text-center items-center transform transition-transform   ${Menu ? "opacity-100 scale-100 ":" opacity-0 hidden invisible"}`}>
               <ul className='flex flex-col '>
-              <li className="bg-gradient-to-b my-2 duration-300 text-2xl"><a href="/Home">Home</a></li>
-              <li className="bg-gradient-to-b my-2 duration-300 text-2xl"><a href="/Contact">Contact</a></li>
-              <li className="bg-gradient-to-b my-2 duration-300  text-2xl"><a href="/About">About</a></li>
-             
+              <li  onClick={()=>handlescroll('Home')}   className={`  my-2 cursor-pointer opacity-70 hover:opacity-100    duration-300 text-2xl`}>Home</li>
+              <li onClick={()=>handlescroll('Skills')}  className=" my-2 cursor-pointer  opacity-70 hover:opacity-100  duration-300 mb-2 text-2xl">Skills</li>
+              <li onClick={()=>handlescroll('Contact')}  className=" my-2 cursor-pointer opacity-70 hover:opacity-100   duration-300 text-2xl">Contact</li>
+              <GlowingButton href="https://www.linkedin.com/in/rohit-dubey-637a8627a/"
+             className="cursor-pointer   md:hidden lg:scale-100  opacity-70 hover:opacity-100 " /> 
             
                 </ul>       
              </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const GlowingButton = () => {
   return (
-    <a href="https://www.linkedin.com/in/rohit-dubey-637a8627a/"><button  className="relative px-5 py-2 opacity-90 hover:opacity-100 cursor-pointer font-bold text-lg rounded-full bg-black border border-[rgba(240,237,234,0.98)] 
+    <a href="https://www.linkedin.com/in/rohit-dubey-637a8627a/"><button  className="relative px-5 py-2 opacity-70 hover:opacity-100 mt-2 cursor-pointer font-bold text-lg rounded-full bg-black border border-[rgba(240,237,234,0.98)] 
                        overflow-hidden transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,204,153,1)]
                     ">
       <span className="relative z-10">Get in Touch</span>

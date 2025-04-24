@@ -65,30 +65,17 @@
   font-style: normal;
 }
 
-.btn-1 {
-  border: none;
-  background-color: #050505;
-  box-shadow: 0 0 5px #059669;
-}
-.btn-1:hover {
-  background-color: antiquewhite;
-   box-shadow: 0 0 10px #059669, 0 0 20px #059669, 0 0 20px  inset;
-}
-.neo-btn:hover {
-  background: #f8fafc;
-  box-shadow: 0 0 5px #f8fafc, 0 0 25px #f8fafc, 0 0 50px #f8fafc, 0 0 200px #f8fafc;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-}
 
 .bg-color {
   --background-color:#292524 ;
+  --sidebar-bg:#1d4ed8;
   --button-color:#111827;
 }
 
 
 .btn-2:hover {
-  background: #059669;
-  box-shadow: 10px 10px 10px #059669, 10px 10px 40px #059669, 0 0 80px #059669;
+  background: #f4f4f5;
+  box-shadow: 0px 0px 10px #f4f4f5, 0px 0px 10px #f4f4f5, 0 0 80px #f4f4f5;
   transition-delay: 0s;
 }
 

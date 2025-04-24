@@ -6,7 +6,7 @@ const Home = () => {
     <div id='Home'> 
 
     <div className='flex flex-col justify-center items-center min-h-screen relative'>
-      <div className="flex justify-center absolute  ">
+      <div className="md:flex justify-center absolute hidden lg:scale-100 md:scale-100  ">
         <Model1 />
       </div>
       <div className="overlay-model absolute w-full h-full lg:h-[150vh]  pointer-events-none z-10"></div>
