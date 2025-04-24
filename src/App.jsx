@@ -23,7 +23,7 @@ function App() {
       <Resume />
       <Contact  />
      
-      <div className=" min-h-[100vh]">
+      <div className=" min-h-[120vh]">
       
       </div>
      

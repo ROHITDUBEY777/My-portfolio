@@ -8,7 +8,7 @@ const MySkills = () => {
   return (
       <div id="Skills">
         
-      {/* <Section > */}
+      <Section>
 
       
       
@@ -25,12 +25,9 @@ const MySkills = () => {
           </div>
         ) )}
        </div>
-    
 
-      {/* </div> */}
- 
   
-      {/* </Section> */}
+      </Section>
   
       </div>
   );
