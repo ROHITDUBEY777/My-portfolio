@@ -1,11 +1,11 @@
-
+import cardBg from "../assets/Benefits/card.svg"
 
 export const SkillObj = [
   {
     id: "1",
     title: "REACT",
     Text:"A JavaScript library for building user interfaces, especially single-page applications (SPAs). Developed by Facebook, React lets you build reusable UI components and efficiently update the DOM using a virtual DOM.",
-    BackgroundUrl:"./src/components/assets/Benefits/card.svg",
+    BackgroundUrl:cardBg,
   },
   {
     id: "2",
