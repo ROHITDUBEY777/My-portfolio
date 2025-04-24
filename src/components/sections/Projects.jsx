@@ -7,9 +7,11 @@ const Projects = () => {
       <h1 className="absolute flex flex-row items-center text-3xl   font-[Poppins] justify-center bg-none h-fit  md:text-6xl    ">
         My Projects
       </h1>
-      <p className="absolute  md:absolute flex flex-col text-center mt-9 md:mt-22 text-base md:text-xl ">Check out some of the projects I've built -   I’d love to hear what you think!</p>
+      <p className="absolute  md:absolute flex flex-col text-center mt-9 md:mt-22 text-base md:text-xl ">
+        Check out some of the projects I've built - I’d love to hear what you
+        think!
+      </p>
       <div className="   items-center justify-evenly   m-auto md:w-screen   flex flex-col md:flex-row        flex-wrap">
-      
         {projects.map((item) => (
           <div
             key={item.id}
@@ -24,11 +26,13 @@ const Projects = () => {
                     {item.projname}{" "}
                   </p>
                   {/* <div className='absolute '> */}
-                  <img
-                    src={item.backgroundUrl}
-                    alt=""
-                    className="pointer-events-none w-1/7    md:w-1/5 rounded-3xl "
-                  />
+                  {item.backgroundUrl && (
+                    <img
+                      src={item.backgroundUrl}
+                      alt=""
+                      className="pointer-events-none w-1/7    md:w-1/5  "
+                    />
+                  )}
                   {/* </div> */}
                 </div>
                 <div className="flex flex-col  mt-2 py-4">
