@@ -5,8 +5,12 @@ const Home = () => {
   return (
     <div id='Home'> 
 
-    <div className='flex flex-col justify-center items-center min-h-screen relative'>
-      <div className="md:flex justify-center absolute hidden lg:scale-100 md:scale-100  ">
+    <div className='flex flex-col text-center
+
+overflow-hidden
+break-words
+object-cover w-full h-auto justify-center items-center min-h-screen relative'>
+      <div className="md:flex justify-center absolute  scale-50 lg:scale-100 md:scale-100  ">
         <Model1 />
       </div>
       <div className="overlay-model absolute w-full h-full lg:h-[150vh]  pointer-events-none z-10"></div>
