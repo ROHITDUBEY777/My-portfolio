@@ -7,13 +7,12 @@ const Navbar = () => {
  
  
   const [Menu,Setmenu] = useState(false);
-  const [clicked,setclicked]=useState(false);
   const handlescroll = (id) =>{
     const element = document.getElementById(id);
     if(element){
       element.scrollIntoView({behavior:'smooth'});
     }
-    <Setmenu className="opacity-0 hidden invisible" />
+    Setmenu(!Menu)
   }
  
   return (
@@ -50,10 +49,10 @@ const Navbar = () => {
                 Setmenu(!Menu)
               }>
               
-              <BiAlignRight className='  cursor-pointer '/>
+              <BiAlignRight className='border  cursor-pointer '/>
               </button>
              </div>
-             <div onClick={()=>setclicked(!clicked)}   className={`fixed  bg-[#020617] text-2xl  z-40   backdrop-blur-2xl flex flex-col  p-6 h-screen  top-10 right-4 duration-300 text-center items-center transform transition-transform   ${Menu ? "opacity-100 scale-100 ":" opacity-0 hidden invisible"}`}>
+             <div   className={`fixed  bg-[#020617] text-2xl  z-40   backdrop-blur-2xl flex flex-col  p-6 h-screen  top-10 right-4 duration-300 text-center items-center transform transition-transform   ${Menu ? "opacity-100 scale-100 ":" opacity-0 hidden invisible"}`}>
               <ul className='flex flex-col '>
               <li  onClick={()=>handlescroll('Home')}   className={`  my-2 cursor-pointer opacity-70 hover:opacity-100    duration-300 text-2xl`}>Home</li>
               <li onClick={()=>handlescroll('Skills')}  className=" my-2 cursor-pointer  opacity-70 hover:opacity-100  duration-300 mb-2 text-2xl">Skills</li>

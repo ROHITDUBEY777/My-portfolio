@@ -8,8 +8,8 @@ const Contact = () => {
   return (
    
     <>
-     <div id='Contact'> 
-    <p  className='flex flex-col   mx-8 text-xl  mt-52'>Feel free to contact me if you have any questions or just want to connect with me.  </p>
+     <div > 
+    <p id='Contact' className='flex flex-col   mx-8 text-xl  mt-52'>Feel free to contact me if you have any questions or just want to connect with me.  </p>
     <div  className=' absolute max-h-screen  flex   flex-col md:flex-row     w-screen mt-4 md:justify-between  gap-5         '>
       
     <div className='mx-8  md:h-fit   md:min-w-1/4   h-fit bg-gradient-to-r from-zinc-900 to-zinc-900 justify-center  md:w-1/4 bg-[var(--bg)]     px-4 py-6'>

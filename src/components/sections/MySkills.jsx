@@ -7,7 +7,7 @@ import cardBg from "../assets/Benefits/card.svg"
 
 const MySkills = () => {
   return (
-      <div id="Skills">
+      <div id="Skills"  >
         
       <Section>
 
