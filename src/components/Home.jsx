@@ -10,7 +10,7 @@ const Home = () => {
 overflow-hidden
 break-words
 object-cover w-full h-auto justify-center items-center min-h-screen relative'>
-      <div className="md:flex justify-center absolute hidden  smooth lg:scale-100 md:scale-100  ">
+      <div className="md:flex justify-center absolute scale-50  smooth lg:scale-100 md:scale-100  ">
         <Model1 />
       </div>
       <div className="overlay-model absolute w-full h-full lg:h-[150vh]  pointer-events-none z-10"></div>
