@@ -8,7 +8,7 @@
     :root{
         --background:#09090b;
         --border:#7f1d1d;
-        --foreground:#3994c1;
+        --foreground:#7e22ce;
         --bg:#020617;
        
     }
@@ -49,7 +49,7 @@
   
   }
   .textColor{
-    color:  #1db3c1 ;
+    color:  #7e22ce;
   }
 .overlay-model{
   background: linear-gradient(to bottom,

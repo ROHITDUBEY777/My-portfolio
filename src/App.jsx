@@ -22,11 +22,6 @@ function App() {
       <Projects />
       <Resume />
       <Contact  />
-     
-      <div className=" min-h-[120vh]">
-      
-      </div>
-     
     </main>
     <Footer  />
     </>

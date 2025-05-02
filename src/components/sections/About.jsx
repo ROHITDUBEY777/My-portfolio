@@ -14,7 +14,7 @@ const About = () => {
         
         <div className=" w-2xl ">
 
-        <p className="  textColor  text-4xl    md:text-5xl font-[Poppins] items-center text-white">
+        <p className=" text-[var(--foreground)]  text-4xl    md:text-5xl font-[Poppins] items-center ">
           {" "}
           About{" "}
         </p>

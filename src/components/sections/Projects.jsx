@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   return (
     <div className=" flex justify-center   min-h-screen mt-52   ">
-      <h1 className="absolute flex flex-row items-center text-3xl   font-[Poppins] justify-center bg-none h-fit  md:text-6xl    ">
+      <h1 className="absolute flex flex-row items-center text-3xl  text-[var(--foreground)]  font-[Poppins] justify-center bg-none h-fit  md:text-6xl    ">
         My Projects
       </h1>
       <p className="absolute  md:absolute flex flex-col text-center mt-9 md:mt-22 text-base md:text-xl ">
@@ -15,7 +15,7 @@ const Projects = () => {
         {projects.map((item) => (
           <div
             key={item.id}
-            className="    bg-[var(--border)] mx-6 sm:h-[24rem] h-[24rem]  md:h-[28rem] xl:h-[28rem]   max-w-[22rem] md:gap-2.5 min-w-[16rem] md:block  my-24  bg-stroke-1 py-9 justify-center
+            className="    bg-gradient-to-r from-indigo-500 to-purple-900 mx-6 sm:h-[24rem] h-[24rem]  md:h-[28rem] xl:h-[28rem]   max-w-[22rem] md:gap-2.5 min-w-[16rem] md:block  my-24  bg-stroke-1 py-9 justify-center
                 "
           >
             <ul className="flex flex-wrap       px-4">
