@@ -35,7 +35,7 @@ const Navbar = () => {
 
 
         <nav className="fixed backdrop-blur-3xl xl:flex  xl:justfiy-between flex  justify-between bg-gradient-to-b font-[Poppins] w-full z-50 right-0 top-0 left-0  items-center  nav-style text-2xl   p-3 ">
-            <p className='text-[var(--foreground)] flex items-start  font-bold opacity-100 transition duration-300'>Rohit Dubey</p>
+            <p className='text-[var(--foreground)] flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p>
             
             
             <ul className=' hidden md:flex md:flex-row  justify-between md:text-3xl lg:text-3xl left-0 items-center  gap-16  '>
