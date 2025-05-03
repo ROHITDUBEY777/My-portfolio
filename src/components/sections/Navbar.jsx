@@ -53,7 +53,7 @@ const Navbar = () => {
             <div  className='hidden md:flex justify-between items-center gap-4 mr-4 '>
             <div className='flex justify-center items-center  scale-100'>
               <a href="https://github.com/ROHITDUBEY777" >
-             <FaGithub className='scale-150 opacity-60 hover:opacity-100 ' />
+             <FaGithub className=' scale-150 opacity-60 hover:opacity-100 ' />
              </a>
              </div>
         
