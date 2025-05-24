@@ -5,10 +5,11 @@ import Navbar from "./components/sections/Navbar"
 import About from "./components/sections/About"
 import MySkills from "./components/sections/MySkills"
 import Projects from "./components/sections/Projects"
-import Resume from "./components/sections/Resume"
-import Contact from "./components/sections/Contact"
-import Footer from "./components/sections/Footer"
 
+import Resume from "./components/sections/Resume"
+
+import Footer from "./components/sections/Footer"
+import Contact from "./components/sections/Contact"
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
       <MySkills />
       <Projects />
       <Resume />
-      <Contact  />
+      <Contact />
     </main>
     <Footer  />
     </>

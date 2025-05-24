@@ -14,7 +14,7 @@ const MySkills = () => {
       
       
        <div className="flex  flex-wrap gap-10 md:ml-4  xl:ml-0 justify-center   "> 
-        <p className=" flex  flex-col md:text-6xl text-3xl text-center   font-[Poppins]    text-[var(--foreground)]  w-full     ">My Skills</p>
+        <p className=" flex  flex-col md:text-4xl lg:text-5xl xl:text-5xl text-3xl text-center   font-[Poppins]    text-[var(--foreground)]  w-full     ">My Skills</p>
          <p className="absolute flex flex-col text-center mt-9 mb-4 md:mt-16 text-base md:text-xl ">Explore the skills I've gained through my projects and experiences.</p>
         {SkillObj.map((item)=>(
           <div className="block p-1 rounded-2xl mt-8  bg-no-repeat bg-[length:100%_100%] w-[24rem]  min-w-[18rem] bg-gradient-to-b from-indigo-600 via-teal-500 to-zinc-900 max-w-1/2 " key={item.id}  >

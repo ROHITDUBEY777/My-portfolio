@@ -76,7 +76,7 @@ const Navbar = () => {
               onClick={()=>{
                  controlmenu();
               }}>
-                <IoMdMenu classname = ' cursor-pointer opacity-70 hover:opacity-100' />
+                <IoMdMenu className = ' cursor-pointer opacity-70 hover:opacity-100' />
               </button>
 
               
@@ -85,9 +85,9 @@ const Navbar = () => {
                  
               <button onClick={()=>
                 closePopup()
-              } class="absolute  cursor-pointer  scale-125 top-4 left-4 text-white opacity-60 hover:opacity-100  transition duration-300">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              } className="absolute  cursor-pointer  scale-125 top-4 left-4 text-white opacity-60 hover:opacity-100  transition duration-300">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>    
               </button>
               <ul className='flex flex-col mt-[4vh] gap-2'>
