@@ -5,8 +5,8 @@ import Contactform from "./contactform";
 const Contact = () => {
   return (
     <>
-      <div id="Contact" >
-        <p className="flex flex-col   text-base  px-6 md:px-10 md:text-base lg:text-xl xl:text-xl  mt-52">
+      <div  onSubmit={(e)=>e.preventDefault()}>
+        <p id="Contact" className="flex flex-col    text-base  px-6 md:px-10 md:text-base lg:text-xl xl:text-xl  ">
           Feel free to contact me if you have any questions or just want to
           connect with me.{" "}
         </p>
