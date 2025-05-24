@@ -42,11 +42,11 @@ const Navbar = () => {
   return (
 
 
-        <nav className="fixed backdrop-blur-3xl xl:flex  xl:justfiy-between flex  justify-between bg-gradient-to-b font-[Poppins] w-full z-50 right-0 top-0 left-0  items-center  nav-style text-2xl   p-3 ">
+        <nav className="fixed backdrop-blur-3xl xl:flex  xl:justfiy-between flex  justify-between bg-gradient-to-b font-[Poppins] w-full z-50 right-0 top-0 left-0  items-center  nav-style text-2xl   p-5 md:p-4 lg:p-4 xl:p-4">
             <p className='text-[var(--foreground)] flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p>
             
             
-            <ul className=' hidden md:hidden lg:flex   justify-between  xl:text-3xl lg:text-2xl left-0 items-center  gap-16  '>
+            <ul className=' hidden md:hidden lg:flex   justify-between  xl:text-2xl lg:text-2xl left-0 items-center  gap-16  '>
                 <li className="bg-gradient-to-b cursor-pointer opacity-60 hover:opacity-100 transition duration-300 " onClick={()=>handlescroll('Home')}  >
                 Home</li>
 
