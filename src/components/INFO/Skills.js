@@ -44,6 +44,12 @@ export const SkillObj = [
     BackgroundUrl:"./src/components/assets/Benefits/card.svg",
   },
   
+  {
+    id: "8",
+    title: "EMAIL JS",
+    Text:"EmailJS enables client-side email sending by connecting your form to services like Gmail using prebuilt templates and API keys.",
+    BackgroundUrl:"./src/components/assets/Benefits/card.svg",
+  }
 
  
 ]
