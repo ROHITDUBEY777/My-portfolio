@@ -1,5 +1,5 @@
 import React from 'react'
-import myresume from '../assets/Rohit Dubey.docx.pdf'
+import myresume from '../assets/Resume.pdf'
 
 export default function Resume() {
   return (
