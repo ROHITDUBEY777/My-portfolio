@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { FaGithub } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
 import GlowingButton from './Glowingbutton';
 import { IoMdMenu } from "react-icons/io";
 
@@ -42,34 +42,34 @@ const Navbar = () => {
   return (
 
 
-        <nav className="fixed backdrop-blur-3xl xl:flex  xl:justfiy-between flex  justify-between bg-gradient-to-b font-[Poppins] w-full z-50 right-0 top-0 left-0  items-center  nav-style text-2xl   p-5 md:p-4 lg:p-4 xl:p-4">
-            <p className='text-[var(--foreground)] flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p>
+        <div className="fixed  xl:flex   xl:justfiy-center flex  justify-center bg-gradient-to-b font-[Poppins]   z-50 right-0 top-0 left-0  items-center  nav-style text-2xl   p-5 md:p-4 lg:p-4 xl:p-4">
+            {/* <p className='text-[var(--foreground)] flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p> */}
             
-            
-            <ul className=' hidden md:hidden lg:flex   justify-between  xl:text-2xl lg:text-2xl left-0 items-center  gap-16  '>
-                <li className="bg-gradient-to-b cursor-pointer opacity-60 hover:opacity-100 transition duration-300 " onClick={()=>handlescroll('Home')}  >
+            <nav className=' justify-center border-sky-300 border   items-center flex   rounded-4xl px-5 backdrop-blur-3xl  py-2 z-50' > 
+
+            <ul className=' hidden md:hidden lg:flex   justify-between  xl:text-xl lg:text-xl left-0 items-center  gap-6  '>
+
+                <li className="bg-gradient-to-b hover:text-[#0ea5e9] cursor-pointer opacity-60 hover:opacity-100 transition duration-300 " onClick={()=>handlescroll('Home')}  >
                 Home</li>
 
-                <li className="bg-gradient-to-b opacity-60 cursor-pointer hover:opacity-100 transition   duration-300 " onClick={()=>handlescroll('Skills')} >
+                <li className="bg-gradient-to-b hover:text-[#0ea5e9]  opacity-60 cursor-pointer hover:opacity-100 transition   duration-300 " onClick={()=>handlescroll('Skills')} >
                 Skills</li>
-                   <li className="bg-gradient-to-b opacity-60 hover:opacity-100 transition cursor-pointer   duration-300"  onClick={()=>handlescroll('Contact')} >
+                   <li className="bg-gradient-to-b hover:text-[#0ea5e9] opacity-60 hover:opacity-100 transition cursor-pointer   duration-300"  onClick={()=>handlescroll('Contact')} >
                   Contact</li>
+                   <li className="bg-gradient-to-b hover:text-[#0ea5e9] opacity-60 hover:opacity-100 transition cursor-pointer   duration-300"  onClick={()=>handlescroll('Projects')} >
+                  Projects</li>
                  
 
              
             </ul>
-            <div  className='hidden lg:flex justify-evenly  items-center  md:relative gap-8 md:gap-10  relative md:hidden   '>
-            <div className='flex justify-center items-center  scale-100'>
+            </nav>
+            <div  className='hidden lg:flex justify-evenly  items-center px-2  md:relative gap-4 relative md:hidden   '>
+            {/* <div className='flex justify-center items-center  scale-100'>
               <a href="https://github.com/ROHITDUBEY777" >
-             <FaGithub className=' scale-150 opacity-60 hover:opacity-100 ' />
+             <FaGithub className=' scale-120 opacity-60 hover:opacity-100 ' />
              </a>
-             </div>
+             </div> */}
         
-            <GlowingButton href="https://www.linkedin.com/in/rohit-dubey-637a8627a/"
-             className="cursor-pointer   md:hidden lg:scale-100 py-2 opacity-70 hover:opacity-100 " />
-             </div>
-             <div className=' block xl:hidden cursor-pointer '
-           >
               
 
               <button className='flex md:flex  lg:hidden opacity-70 hover:opacity-100  scale-150 px-2 cursor-pointer  flex-col justify-between ' 
@@ -99,7 +99,7 @@ const Navbar = () => {
             
                 </ul>       
              </div>
-        </nav>
+        </div>
 
 
          

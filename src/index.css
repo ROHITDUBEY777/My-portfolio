@@ -6,9 +6,9 @@
 
 @layer base {
     :root{
-        --background:#09090b;
+        --background:#0a0a0a;
         --border:#7f1d1d;
-        --foreground:#7e22ce;
+        --foreground:#0ea5e9;
         --bg:#020617;
        
     }
@@ -17,7 +17,7 @@
 *{
     box-sizing: border-box;
 }
-.roboto-font {
+.roboto {
     font-family: "Roboto", sans-serif;
 }
 

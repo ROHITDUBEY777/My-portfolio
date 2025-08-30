@@ -10,15 +10,15 @@ const About = () => {
   return (
     <div id="About">
       {" "}
-      <div className=" w-full  flex items-center mt-64     px-10    justify-between  min-h-screen  " >
+      <div className=" w-full  flex items-center mt-64  text-white    px-10    justify-between  min-h-screen  " >
         
-        <div className=" w-2xl ">
+        <div className=" w-2xl border-sky-300  border-animate-spin from-blue-400 via-black to-blue-400   hover:scale-105 duration-400 transition-transform border rounded px-4 py-4 ">
 
-        <p className=" text-[var(--foreground)]  text-4xl    md:text-4xl lg:text-5xl xl:text-5xl font-[Poppins] items-center ">
+        <p className=" text-white  text-4xl    md:text-4xl lg:text-4xl xl:text-5xl   font-[Roboto] items-center ">
           {" "}
           About{" "}
         </p>
-        <h1 className="text-2xl  md:text-4xl  lg:text-5xl xl:text-5xl font-[Robot] my-3  ">Hi, I'M ROHIT DUBEY</h1>
+        <h1 className="roboto text-2xl  md:text-4xl   lg:text-5xl xl:text-4xl font-[Roboto] my-3  ">Hi, I'M ROHIT DUBEY</h1>
         <p className="opacity-80 flex md:text-2xl   ">
           I'm proficient in React-JS, Tailwind CSS, and CSS, with a strong
           passion for learning and exploring newer technologies. I enjoy
