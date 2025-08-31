@@ -29,9 +29,11 @@ const Home = () => {
         <p className="text-white text-lg md:text-2xl opacity-80">
           Crafting sleek, responsive web applications with modern technologies.
         </p>
-        
+             <div>
+
             <GlowingButton href="https://www.linkedin.com/in/rohit-dubey-637a8627a/"
              />
+             </div>
              </div>
              <div className=' block xl:hidden cursor-pointer '
            >

@@ -1,4 +1,3 @@
-import cardBg from "../assets/Benefits/card.svg"
 
 export const SkillObj = [
   {

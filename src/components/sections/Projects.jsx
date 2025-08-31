@@ -1,50 +1,66 @@
 import React from "react";
-import projects from "../INFO/projects";
-import { FaGithub } from "react-icons/fa";
+import projectsobj from "../INFO/projects";
+
 const Projects = () => {
   return (
-    <div id="Projects" className=" flex justify-center   min-h-screen mt-52   ">
-      <h1 className="absolute flex flex-row items-center text-3xl mb-2 text-[var(--foreground)]  font-[Poppins] justify-center bg-none h-fit  md:text-4xl lg:text-5xl xl:text-5xl    ">
-        My Projects
+    <div
+      id="Projects"
+      className="flex flex-col justify-center min-h-screen mt-32 px-6"
+    >
+      {/* Title */}
+      <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 drop-shadow-lg">
+        Projects 
       </h1>
-      <p className="absolute  md:absolute flex flex-col text-center mt-9 md:mt-16  text-sm px-4 md:text-xl ">
-        Check out some of the projects I've built - I’d love to hear what you
+
+      {/* Subtitle */}
+      <p className="text-center mt-3 text-gray-400 text-sm md:text-lg">
+        Check out some of the projects I've built — I’d love to hear what you
         think!
       </p>
-      <div className="   items-center justify-evenly   m-auto md:w-screen md:mt-2  flex flex-col md:flex-row        flex-wrap">
-        {projects.map((item) => (
+
+      {/* Projects Grid */}
+      <div className="flex flex-wrap justify-center gap-12 py-12">
+        {projectsobj.map((item) => (
           <div
             key={item.id}
-            className="    bg-gradient-to-r from-indigo-500 to-purple-900 mx-6 sm:h-fit  h-[24rem]  md:h-[26rem] xl:h-[28rem]   max-w-[22rem] md:gap-2.5 min-w-[16rem] md:block  my-24  bg-stroke-1 py-9 justify-center
-                "
+            className="w-full sm:w-72 md:w-80 lg:w-96 bg-gradient-to-br from-[#0f172a] to-[#1e293b] rounded-2xl shadow-xl hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-2"
           >
-            <ul className="flex flex-wrap       px-4">
-              <li className=" xl:mx-6 flex flex-col text-2xl   md:py-2  ">
-                <div className=" flex-row flex text-start   w-full  gap-4  justify-between ">
-                  <p className=" flex  md:text-2xl text-xl  md:mb-6">
-                    {" "}
-                    {item.projname}{" "}
-                  </p>
-                  {/* <div className='absolute '> */}
-                  {item.backgroundUrl && (
-                    <img
-                      src={item.backgroundUrl}
-                      alt=""
-                      className="pointer-events-none w-1/7    md:w-1/5  "
-                    />
-                  )}
-                  {/* </div> */}
-                </div>
-                <div className="flex flex-col  mt-2 py-4">
-                  <p className=" text-base  "> {item.progdesc}</p>
-                  <a href={item.github}>
-                    <p className="absolute      scale-125 opacity-60 hover:opacity-100 flex mt-3   ">
-                      <FaGithub />
-                    </p>
-                  </a>
-                </div>
-              </li>
-            </ul>
+            {/* Project Title */}
+            <p className="text-center text-lg lg:text-2xl font-semibold text-cyan-400 mt-6">
+              {item.projname}
+            </p>
+
+            {/* Image */}
+            <img
+              src={item.backgroundUrl}
+              alt="project preview"
+              className="w-full h-fit object-cover rounded-lg mt-4 px-4"
+            />
+
+            {/* Live Link Button */}
+            <div className="flex flex-row gap-6 justify-center mt-4">
+              <a
+                href={item.livelink}
+                target="_blank"
+                rel="noreferrer"
+                className="px-6 py-2 border border-cyan-400 text-cyan-300 rounded-xl hover:bg-cyan-400 hover:text-black transition duration-300"
+              >
+                🔗 Live Link
+              </a>
+              <a
+                href={item.github}
+                target="_blank"
+                rel="noreferrer"
+                className="px-6 py-2 border border-cyan-400 text-cyan-300 rounded-xl hover:bg-cyan-400 hover:text-black transition duration-300"
+              >
+                Github
+              </a>
+            </div>
+
+            {/* Description */}
+            <p className="text-sm text-gray-300 text-center px-6 py-6">
+              {item.progdesc}
+            </p>
           </div>
         ))}
       </div>

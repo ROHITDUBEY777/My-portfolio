@@ -18,11 +18,12 @@ function App() {
 
   return (
     <> 
-      <Cursor />
+    
       <Router>
 
     <main className="relative min-h-screen  justify-center text-white bg-[var(--background)] overflow-hidden">
        {/* <Cursor /> */}
+       <Cursor />
        <Routes>
 {/* 
       <Route path="/" element={<Navbar />} className={`text-[var(--foreground)]`}  />      

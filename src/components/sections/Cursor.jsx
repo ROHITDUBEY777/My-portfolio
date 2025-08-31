@@ -4,15 +4,17 @@ import { useEffect, useRef } from "react";
  * CoolCursor – custom cursor with trailing ring, magnetic hover & ripples.
  * Props: size (ring diameter), dot (dot size), ease (0..1 smoothing)
  */
-export default function Cursor({ size = 36, dot = 6, ease = 0.15 }){
+export default function Cursor({ size = 36, dot = 6, ease = 0.15 }) {
   const dotRef = useRef(null);
   const ringRef = useRef(null);
   const rippleRef = useRef(null);
-  const pos = useRef({ x: 0, y: 0 });
-  const mouse = useRef({ x: 0, y: 0 });
+  const pos = useRef({ x: -9999, y: -9999 }); // start off-screen
+  const mouse = useRef({ x: -9999, y: -9999 }); // start off-screen
 
   useEffect(() => {
-    const dotEl = dotRef.current, ringEl = ringRef.current, ripEl = rippleRef.current;
+    const dotEl = dotRef.current,
+      ringEl = ringRef.current,
+      ripEl = rippleRef.current;
     if (!dotEl || !ringEl || !ripEl) return;
 
     // Hide on touch devices
@@ -23,41 +25,64 @@ export default function Cursor({ size = 36, dot = 6, ease = 0.15 }){
       return;
     }
 
-    const isHot = (el) => el.closest("a, button, [role='button'], [data-cursor='hover']");
+    const isHot = (el) =>
+      el.closest("a, button, [role='button'], [data-cursor='hover']");
 
     const onMove = (e) => {
       mouse.current.x = e.clientX;
       mouse.current.y = e.clientY;
 
       // dot follows instantly
-      dotEl.style.transform = `translate(${e.clientX - dot/2}px, ${e.clientY - dot/2}px)`;
+      dotEl.style.transform = `translate(${e.clientX - dot / 2}px, ${
+        e.clientY - dot / 2
+      }px)`;
     };
 
     // click ripple
     const onDown = () => {
       ripEl.animate(
         [
-          { transform: `translate(${mouse.current.x - size/2}px, ${mouse.current.y - size/2}px) scale(0.2)`, opacity: .5 },
-          { transform: `translate(${mouse.current.x - size/2}px, ${mouse.current.y - size/2}px) scale(1.6)`, opacity: 0 }
+          {
+            transform: `translate(${mouse.current.x - size / 2}px, ${
+              mouse.current.y - size / 2
+            }px) scale(0.2)`,
+            opacity: 0.5,
+          },
+          {
+            transform: `translate(${mouse.current.x - size / 2}px, ${
+              mouse.current.y - size / 2
+            }px) scale(1.6)`,
+            opacity: 0,
+          },
         ],
         { duration: 420, easing: "cubic-bezier(.22,.61,.36,1)" }
       );
     };
 
     // grow on interactive
-    const onOver = (e) => { if (isHot(e.target)) ringEl.dataset.big = "1"; };
-    const onOut  = (e) => { if (isHot(e.target)) delete ringEl.dataset.big; };
+    const onOver = (e) => {
+      if (isHot(e.target)) ringEl.dataset.big = "1";
+    };
+    const onOut = (e) => {
+      if (isHot(e.target)) delete ringEl.dataset.big;
+    };
 
-    // magnetic hover (slight pull of element toward cursor)
+    // magnetic hover
     const onMouseEnter = (e) => {
       const el = isHot(e.target);
       if (!el) return;
-      el.animate([{ transform: "translate(0,0)" }, { transform: "translate(2px,2px)" }], { duration: 120, fill: "forwards" });
+      el.animate(
+        [{ transform: "translate(0,0)" }, { transform: "translate(2px,2px)" }],
+        { duration: 120, fill: "forwards" }
+      );
     };
     const onMouseLeave = (e) => {
       const el = isHot(e.target);
       if (!el) return;
-      el.animate([{ transform: "translate(2px,2px)" }, { transform: "translate(0,0)" }], { duration: 160, fill: "forwards" });
+      el.animate(
+        [{ transform: "translate(2px,2px)" }, { transform: "translate(0,0)" }],
+        { duration: 160, fill: "forwards" }
+      );
     };
 
     window.addEventListener("mousemove", onMove, { passive: true });
@@ -73,8 +98,9 @@ export default function Cursor({ size = 36, dot = 6, ease = 0.15 }){
       pos.current.y += (mouse.current.y - pos.current.y) * ease;
 
       const s = ringEl.dataset.big ? 1.6 : 1;
-      ringEl.style.transform =
-        `translate(${pos.current.x - size/2}px, ${pos.current.y - size/2}px) scale(${s})`;
+      ringEl.style.transform = `translate(${pos.current.x - size / 2}px, ${
+        pos.current.y - size / 2
+      }px) scale(${s})`;
 
       raf = requestAnimationFrame(loop);
     };
@@ -91,7 +117,6 @@ export default function Cursor({ size = 36, dot = 6, ease = 0.15 }){
     };
   }, [size, dot, ease]);
 
-  // Inline CSS keyframes so you don’t need to edit tailwind.config
   return (
     <>
       <style>{`
@@ -103,25 +128,23 @@ export default function Cursor({ size = 36, dot = 6, ease = 0.15 }){
       {/* click ripple layer */}
       <div
         ref={rippleRef}
-        className="pointer-events-none fixed left-0 top-0 z-[9997] h-[${size}px] w-[${size}px] rounded-full border border-white/30"
-        style={{ width: size, height: size }}
+        className="pointer-events-none fixed left-0 top-0 z-[9997] rounded-full border border-white/30"
+        style={{ width: size, height: size, transform: "translate(-9999px,-9999px)" }}
       />
 
       {/* trailing ring */}
       <div
         ref={ringRef}
         className="pointer-events-none fixed left-0 top-0 z-[9998] rounded-full border border-white/90 opacity-70 backdrop-blur-[2px] transition-[opacity] duration-200"
-        style={{ width: size, height: size }}
+        style={{ width: size, height: size, transform: "translate(-9999px,-9999px)" }}
       />
 
       {/* center dot */}
       <div
         ref={dotRef}
-        // className="pointer-events-none fixed left-0 top-0 z-[9999] rounded-full bg-white mix-blend-difference transition-opacity duration-
-                className="pointer-events-none fixed left-0 top-0 z-[9999] rounded-full bg-white mix-blend-difference transition-opacity duration-200"
-        style={{ width: dot, height: dot }}
+        className="pointer-events-none fixed left-0 top-0 z-[9999] rounded-full bg-white mix-blend-difference transition-opacity duration-200"
+        style={{ width: dot, height: dot, transform: "translate(-9999px,-9999px)" }}
       />
     </>
   );
 }
-
