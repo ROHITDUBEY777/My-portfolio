@@ -1,7 +1,7 @@
 // import pass from '../assets/pass.webp';
 // import Weather from '../assets/weatherlogo.jpg'
 import Dandoo from "../assets/Dandoo.png"
-import chatbotimg from "../assets/Chatbot.png"
+import chatbotimg from "../assets/chatbot.png"
 import password from "../assets/password.png"
 import weather from  "../assets/weather.png"
 import textutils from "../assets/textutils.png"
