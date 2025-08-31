@@ -32,11 +32,12 @@ const Contactform = () => {
   };
 
   return (
-    <div className=" md:justify-between  px-2  mb-10 items-center  flex   flex-row lg:flex-row  md:flex-col     mt-4  gap-5    ">
+    <div className=" md:justify-between   mb-10 items-center  flex   flex-row lg:flex-row  md:flex-col     mt-4  gap-5    ">
+     
       <form
         id="Contact"
         onSubmit={sendemail}
-        className="space-y-2 min-w-1/2 max-h-fit   md:h-fit w-full "
+        className="space-y-2    md:h-fit w-full "
       >
         <p className="md:text-base lg:text-xl xl:text-xl text-base">
           Enter your name here{" "}
@@ -48,7 +49,7 @@ const Contactform = () => {
           required
           value={form.name}
           onChange={handleChange}
-          className="w-full p-2  border bg-[#1e293b] text-white"
+          className="w-full p-2   border bg-[#1e293b] text-white"
         />
         <p className="md:text-base lg:text-xl xl:text-xl text-base">
           Enter your email here{" "}
@@ -90,7 +91,8 @@ const Contactform = () => {
           </p>
         )}
       </form>
-    </div>
+      </div>
+   
   );
 };
 

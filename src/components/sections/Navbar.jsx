@@ -45,9 +45,9 @@ const Navbar = () => {
         <div className="fixed  xl:flex   xl:justfiy-center flex  justify-center bg-gradient-to-b font-[Poppins]   z-50 right-0 top-0 left-0  items-center  nav-style text-2xl   p-5 md:p-4 lg:p-4 xl:p-4">
             {/* <p className='text-[var(--foreground)] flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p> */}
             
-            <nav className=' justify-center border-sky-300 border   items-center flex   rounded-4xl px-5 backdrop-blur-3xl  py-2 z-50' > 
+            <nav className=' justify-center border-sky-300 border  lg:flex   items-center flex   rounded-4xl px-5 backdrop-blur-3xl  py-2 z-50' > 
 
-            <ul className=' hidden md:hidden lg:flex   justify-between  xl:text-xl lg:text-xl left-0 items-center  gap-6  '>
+            <ul className=' text-base flex  lg:flex   justify-between  xl:text-xl lg:text-xl left-0 items-center gap-2 md:gap-6  '>
 
                 <li className="bg-gradient-to-b hover:text-[#0ea5e9] cursor-pointer opacity-60 hover:opacity-100 transition duration-300 " onClick={()=>handlescroll('Home')}  >
                 Home</li>
@@ -62,7 +62,8 @@ const Navbar = () => {
 
              
             </ul>
-            </nav>
+              </nav>
+           
             <div  className='hidden lg:flex justify-evenly  items-center px-2  md:relative gap-4 relative md:hidden   '>
             {/* <div className='flex justify-center items-center  scale-100'>
               <a href="https://github.com/ROHITDUBEY777" >
@@ -99,6 +100,7 @@ const Navbar = () => {
             
                 </ul>       
              </div>
+            
         </div>
 
 

@@ -12,7 +12,7 @@ const About = () => {
       {" "}
       <div className=" w-full  flex items-center mt-64  text-white    px-10    justify-between  min-h-screen  " >
         
-        <div className=" w-2xl border-sky-300  border-animate-spin from-blue-400 via-black to-blue-400   hover:scale-105 duration-400 transition-transform border rounded px-4 py-4 ">
+        <div className=" w-2xl    hover:scale-105 duration-400  rounded px-4 py-4 ">
 
         <p className=" text-white  text-4xl    md:text-4xl lg:text-4xl xl:text-5xl   font-[Roboto] items-center ">
           {" "}
