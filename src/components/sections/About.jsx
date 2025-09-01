@@ -14,11 +14,11 @@ const About = () => {
         
         <div className=" w-2xl    hover:scale-105 duration-400  rounded px-4 py-4 ">
 
-        <p className=" text-white  text-4xl    md:text-4xl lg:text-4xl xl:text-5xl   font-[Roboto] items-center ">
+        <p className=" text-cyan-400   text-4xl font-bold    md:text-4xl lg:text-4xl xl:text-5xl   font-[Roboto] items-center ">
           {" "}
           About{" "}
         </p>
-        <h1 className="roboto text-2xl  md:text-4xl   lg:text-5xl xl:text-4xl font-[Roboto] my-3  ">Hi, I'M ROHIT DUBEY</h1>
+        <h1 className="roboto text-2xl  md:text-4xl   text-purple-500    lg:text-5xl xl:text-4xl font-[Roboto] my-3  ">Hi, I'M ROHIT DUBEY</h1>
         <p className="opacity-80 flex md:text-2xl   ">
           I'm proficient in React-JS, Tailwind CSS, and CSS, with a strong
           passion for learning and exploring newer technologies. I enjoy

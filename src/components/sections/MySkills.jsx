@@ -13,7 +13,7 @@ const MySkills = () => {
       
       
        <div className="flex  flex-wrap gap-10 md:ml-4  xl:ml-0 justify-center   "> 
-        <p id="Skills" className=" flex  flex-col md:text-4xl lg:text-5xl xl:text-5xl text-3xl text-center   font-[Poppins]    text-[var(--foreground)]  w-full     "> Skills & Technologies </p>
+        <p id="Skills" className=" flex  flex-col md:text-4xl lg:text-5xl xl:text-5xl text-3xl text-center font-bold    font-[Poppins]    text-[var(--foreground)]  w-full     "> Skills & Technologies </p>
         
          <p className="absolute flex flex-col text-center mt-9 mb-4 md:mt-16 text-base md:text-xl ">Explore the skills I've gained through my projects and experiences.</p>
         

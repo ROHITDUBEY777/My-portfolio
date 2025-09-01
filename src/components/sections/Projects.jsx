@@ -8,7 +8,7 @@ const Projects = () => {
       className="flex flex-col justify-center min-h-screen mt-32 px-6"
     >
       {/* Title */}
-      <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 drop-shadow-lg">
+      <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r bg-cyan-400  drop-shadow-lg">
         Projects 
       </h1>
 

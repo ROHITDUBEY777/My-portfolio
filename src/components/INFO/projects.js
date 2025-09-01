@@ -47,6 +47,7 @@ export  const  projectsobj = [
      projname:"TextUtils Website ",
      progdesc:"TextUtils is a modern, lightweight, and user-friendly text utility web application built with React. Designed to simplify and speed up everyday text processing tasks, TextUtils empowers users to transform, analyze, and manage their text content with ease.",
      github:"https://github.com/ROHITDUBEY777/TextUtils-",
+     livelink:"",
      backgroundUrl:textutils
                 
     }
