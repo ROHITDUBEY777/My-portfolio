@@ -43,7 +43,7 @@ const Projects = () => {
                 href={item.livelink}
                 target="_blank"
                 rel="noreferrer"
-                className="px-6 py-2 border border-cyan-400 text-cyan-300 rounded-xl hover:bg-cyan-400 hover:text-black transition duration-300"
+                className="px-6 py-2 border cursor-pointer border-cyan-400 text-cyan-300 rounded-xl hover:bg-cyan-400 hover:text-black transition duration-300"
               >
                 🔗 Live Link
               </a>
