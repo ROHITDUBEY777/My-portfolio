@@ -27,16 +27,16 @@ const About = () => {
         </p>
         <div className=" flex  justify-start items-center my-5 left-2 relative gap-12  hover:shadow[0_0_15px_rgba(255,204,153,1)]   cursor-pointer   flex-row">
           <a href="https://github.com/ROHITDUBEY777">
-            <FaGithub className="scale-200 opacity-70 hover:opacity-100 transition duration-300" />
+            <FaGithub className="scale-175  opacity-70 hover:opacity-100 transition duration-300" />
           </a>
           <a href="https://www.linkedin.com/in/rohit-dubey-637a8627a/">
-            <AiOutlineLinkedin className="scale-200 opacity-70 hover:opacity-100 transition duration-300 " />
+            <AiOutlineLinkedin className="scale-175 opacity-70 hover:opacity-100 transition duration-300 " />
           </a>
           <a href="https://x.com/rohit_dubey_07">
-            <FaSquareXTwitter className="scale-200 opacity-70 hover:opacity-100 transition duration-300" />
+            <FaSquareXTwitter className="scale-175  opacity-70 hover:opacity-100 transition duration-300" />
           </a>
           <a href="https://www.instagram.com/_rohit_dubey_07?igsh=MXMwbjFhdW5yZnRybg==">
-            <IoLogoInstagram className="scale-200 opacity-70 hover:opacity-100 transition duration-300" />
+            <IoLogoInstagram className="scale-175  opacity-70 hover:opacity-100 transition duration-300" />
           </a>
           
             </div>
