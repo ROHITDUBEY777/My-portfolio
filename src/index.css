@@ -44,6 +44,8 @@
   }
    */
 
+
+
   .oswald{
     font-family: "Oswald", sans-serif;
   
@@ -59,6 +61,16 @@
   /* rgba(0,0,0,0.5) 100% */
   );
 }
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .poppins-medium {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -79,3 +91,10 @@
   transition-delay: 0s;
 }
 
+
+
+.logo-slide2{
+  display: inline flex;
+  position:relative;
+  animation: slide-left 10s infinite linear ;
+}

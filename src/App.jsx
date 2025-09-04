@@ -3,7 +3,7 @@ import React from "react"
 import Home from "./components/Home"
 import Navbar from "./components/sections/Navbar"
 import About from "./components/sections/About"
-import MySkills from "./components/sections/MySkills"
+// import MySkills from "./components/sections/MySkills"
 import Projects from "./components/sections/Projects"
 import Cursor from "./components/sections/Cursor"
 
@@ -12,6 +12,7 @@ import Resume from "./components/sections/Resume"
 import Footer from "./components/sections/Footer"
 import Contact from "./components/sections/Contact"
 import {BrowserRouter as Router,Routes,Route } from "react-router-dom"
+import NewSkills from "./components/sections/NewSkills"
 
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
        
        <Home />
        <About />
-       <MySkills />
+       <NewSkills />
        <Projects />
        <Resume />
        <Contact />
