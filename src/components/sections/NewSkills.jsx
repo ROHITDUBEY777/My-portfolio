@@ -10,6 +10,8 @@ import { FaCss3Alt } from "react-icons/fa6";
 import { FaJs } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
+import { FaJava } from "react-icons/fa";
+
 
 const NewSkills = () => {
   return (
@@ -24,10 +26,10 @@ const NewSkills = () => {
       <div className="  w-full      pointer-events-none  rounded-md ">
           
             <div  className="  ">
-              <div className="logo-div2 relative  py-5 h-full flex  gap-21    items-center w-full overflow-hidden">
+              <div className="logo-div2 relative  py-5 h-full flex  gap-10 md:gap-20    items-center w-full overflow-hidden">
                 <div className="bg-gradient-to-r from-black to-transparent absolute left-0 top-0 bottom-0 z-20 h-full  md:w-1/6"></div>
                 <div className="bg-gradient-to-l from-black to-transparent absolute right-0 top-0 bottom-0 z-20 h-full  md:w-1/6"></div>
-                <div  className="logo-slide2  text-8xl items-center justify-center gap-10    md:gap-20 h-[10rem] md:h-[11rem]  flex w-full">
+                <div  className="logo-slide2  text-8xl items-center justify-center gap-6    md:gap-20 h-[8rem] md:h-[11rem]  flex w-full">
                  <FaJs />
                   <FaReact />
                   <FaFigma />
@@ -35,8 +37,9 @@ const NewSkills = () => {
                   <RiTailwindCssFill />
                   <FaHtml5 />
                   <FaGithub />
+                  <FaJava />
                 </div>
-                <div  className="logo-slide2    text-8xl items-center justify-center gap-10 md:gap-20    md:h-[11rem]  flex w-full">
+                <div  className="logo-slide2    text-8xl items-center justify-center gap-6  md:gap-20    md:h-[11rem]  flex w-full">
                 <FaJs />
                   <FaReact />
                   <FaFigma />
@@ -44,6 +47,7 @@ const NewSkills = () => {
                   <RiTailwindCssFill />
                   <FaHtml5 />
                   <FaGithub />
+                     <FaJava />
                 </div>
               </div>
             </div>
