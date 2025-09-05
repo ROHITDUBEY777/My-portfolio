@@ -23,7 +23,7 @@ function App() {
   useEffect(()=>{
     if(!ScrollSmoother.get()){
       ScrollSmoother.create({
-        wrapper:"#smooth-wrapper",
+        // wrapper:"#smooth-wrapper",
         content:"#smooth-content",
         smooth:2,
         effects:true,
@@ -33,24 +33,26 @@ function App() {
 
   return (
     <> 
-      
+       
       <Router>
        <Cursor />
-       <div id="smooth-wrapper">
+      
+ <Navbar />
+       {/* <div id="smooth-wrapper"> */}
        <div id="smooth-content">
-
+        
+      
     <main className="relative min-h-screen  justify-center text-white bg-[var(--background)] overflow-hidden">
       
      
        <Routes>
-        
+       
 
       <Route path="/" element={
         <>
-
+ 
      
 
-       <Navbar  />
        
        <Home />
        <About />
@@ -70,7 +72,7 @@ function App() {
     </main>
       </div>
  
-        </div>
+        {/* </div> */}
       </Router>
     </>
   ) 
