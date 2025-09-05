@@ -50,14 +50,14 @@ const Navbar = () => {
 
             <ul className=' text-base flex  lg:flex   justify-between  xl:text-xl lg:text-xl left-0 items-center gap-2 md:gap-6  '>
 
-                <li className="bg-gradient-to-b hover:text-[#0ea5e9] cursor-pointer opacity-60  hover:opacity-100 transition duration-300 " onClick={()=>handlescroll('Home')}  >
+                <li className="bg-gradient-to-b hover:text-[#0ea5e9] cursor-pointer transition duration-300 " onClick={()=>handlescroll('Home')}  >
                 Home</li>
  
-                <li className="bg-gradient-to-b hover:text-[#0ea5e9]  opacity-60 cursor-pointer hover:opacity-100 transition   duration-300 " onClick={()=>handlescroll('Skills')} >
+                <li className="bg-gradient-to-b hover:text-[#0ea5e9] cursor-pointer  transition   duration-300 " onClick={()=>handlescroll('Skills')} >
                 Skills</li>
-                   <li className="bg-gradient-to-b hover:text-[#0ea5e9] opacity-60 hover:opacity-100 transition cursor-pointer   duration-300"  onClick={()=>handlescroll('Contact')} >
+                   <li className="bg-gradient-to-b hover:text-[#0ea5e9]  transition cursor-pointer   duration-300"  onClick={()=>handlescroll('Contact')} >
                   Contact</li>
-                   <li className="bg-gradient-to-b hover:text-[#0ea5e9] opacity-60 hover:opacity-100 transition cursor-pointer   duration-300"  onClick={()=>handlescroll('Projects')} >
+                   <li className="bg-gradient-to-b hover:text-[#0ea5e9]  transition cursor-pointer   duration-300"  onClick={()=>handlescroll('Projects')} >
                   Projects</li>
                  
 

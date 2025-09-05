@@ -10,22 +10,22 @@ const About = () => {
   return (
     <div id="About">
       {" "}
-      <div className=" w-full  flex items-center mt-64  text-white    px-10    justify-between  min-h-screen  " >
+      <div className=" w-full  flex flex-col  text-center items-center mt-34  text-white        md:justify-between    " >
         
-        <div className=" w-2xl    hover:scale-105 duration-400  rounded px-4 py-4 ">
+        <div className=" w-2xl    hover:scale-105 duration-400  rounded   text-center   py-4 ">
 
-        <p className=" text-cyan-400   text-4xl font-bold    md:text-4xl lg:text-4xl xl:text-5xl   font-[Roboto] items-center ">
+        <p className=" text-[var(--foreground)] mt-11   text-3xl font-bold    md:text-5xl lg:text-5xl xl:text-5xl   font-[Poppins] items-center ">
           {" "}
           About{" "}
         </p>
-        <h1 className="roboto text-2xl  md:text-4xl   text-purple-500    lg:text-5xl xl:text-4xl font-[Roboto] my-3  ">Hi, I'M ROHIT DUBEY</h1>
-        <p className="opacity-80 flex md:text-2xl   ">
+        <h1 className="roboto text-2xl  md:text-4xl     lg:text-4xl xl:text-4xl font-[Roboto] my-3  ">Hi, I'M ROHIT DUBEY</h1>
+        <p className="opacity-80   text-sm px-40 md:px-0      md:text-xl text-center   ">
           I'm proficient in React-JS, Tailwind CSS, and CSS, with a strong
           passion for learning and exploring newer technologies. I enjoy
           building sleek, responsive web applications and constantly improving
           my skill set.
         </p>
-        <div className=" flex  justify-start items-center my-5 left-2 relative gap-12  hover:shadow[0_0_15px_rgba(255,204,153,1)]   cursor-pointer   flex-row">
+        <div className=" flex  justify-center items-center my-5 left-2 relative gap-12  hover:shadow[0_0_15px_rgba(255,204,153,1)]   cursor-pointer   flex-row">
           <a href="https://github.com/ROHITDUBEY777">
             <FaGithub className="scale-175  opacity-70 hover:opacity-100 transition duration-300" />
           </a>

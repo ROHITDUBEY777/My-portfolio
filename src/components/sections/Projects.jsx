@@ -8,12 +8,12 @@ const Projects = () => {
       className="flex flex-col justify-center min-h-screen mt-32 px-6"
     >
       {/* Title */}
-      <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r bg-cyan-400  drop-shadow-lg">
+      <h1 className="text-center text-3xl md:text-5xl lg:text-5xl font-bold text-[var(--foreground)] fonr-[Poppins]  drop-shadow-lg">
         Projects 
       </h1>
 
       {/* Subtitle */}
-      <p className="text-center mt-3 text-gray-400 text-sm md:text-lg">
+      <p className="text-center mt-3  text-sm md:text-lg">
         Check out some of the projects I've built — I’d love to hear what you
         think!
       </p>
