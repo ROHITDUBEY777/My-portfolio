@@ -8,42 +8,49 @@ import Projects from "./components/sections/Projects"
 import Cursor from "./components/sections/Cursor"
 
 import Resume from "./components/sections/Resume"
-
+import { useEffect } from "react"
 import Footer from "./components/sections/Footer"
 import Contact from "./components/sections/Contact"
 import {BrowserRouter as Router,Routes,Route } from "react-router-dom"
 import NewSkills from "./components/sections/NewSkills"
+import gsap from "gsap";
+import { ScrollSmoother } from "gsap/ScrollSmoother"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
-
+gsap.registerPlugin(ScrollSmoother,ScrollTrigger)
 function App() {
+
+  useEffect(()=>{
+    if(!ScrollSmoother.get()){
+      ScrollSmoother.create({
+        wrapper:"#smooth-wrapper",
+        content:"#smooth-content",
+        smooth:2,
+        effects:true,
+      })
+    }
+  },[]);
 
   return (
     <> 
-    
+      
       <Router>
+       <Cursor />
+       <div id="smooth-wrapper">
+       <div id="smooth-content">
 
     <main className="relative min-h-screen  justify-center text-white bg-[var(--background)] overflow-hidden">
-       {/* <Cursor /> */}
-       <Cursor />
-       <Routes>
-{/* 
-      <Route path="/" element={<Navbar />} className={`text-[var(--foreground)]`}  />      
-      <Route path={`Home`} element={<Home />} />      
-      <Route path="/" element={<About />} />      
-      <Route path="/" element={<MySkills />} />      
-      <Route path="/" element={<Projects />} />      
-      <Route path="/" element={<Resume />} />      
-      <Route path="/" element={<Contact />} />      
-      <Route path="/" element={<Footer />} />      
-
-      */}
       
+     
+       <Routes>
+        
+
       <Route path="/" element={
-       <>
+        <>
 
-       <div>
+     
 
-       <Navbar className={`text-[var(--foreground)`} />
+       <Navbar  />
        
        <Home />
        <About />
@@ -52,14 +59,18 @@ function App() {
        <Resume />
        <Contact />
        <Footer />
-       </div>
+      
        </>
       }/>
 
       
        </Routes>
- 
+
+    
     </main>
+      </div>
+ 
+        </div>
       </Router>
     </>
   ) 
