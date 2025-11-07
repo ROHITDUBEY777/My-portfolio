@@ -6,7 +6,7 @@ export default function Hero3D() {
   const meshRef = useRef();
 
   return (
-    <div className="w-full h-[100vh] absolute  cursor-pointer inset-0 z-0 bg-gradient-to-b from-gray-900 via-black to-gray-950">
+    <div className="hidden  md:h-[100vh] absolute  cursor-pointer inset-0 z-0 bg-gradient-to-b from-gray-900 via-black to-gray-950">
       <Canvas camera={{ position: [0, 0, 4], fov: 60 }}>
         {/* 🌟 Background stars */}
         <Stars radius={80} depth={50} count={4000} factor={4} fade />

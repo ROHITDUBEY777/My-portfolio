@@ -6,27 +6,9 @@ import { ScrollSmoother } from 'gsap/ScrollSmoother';
 
 const Navbar = () => {
 
-  const[show,setshow] = useState(true);
-  const[lastscrollY,setlastscrolly] = useState(0);
+ 
 
-  const ControlNavbar = () => {
-    if(window.scrollY > lastscrollY ){
-      //hiding the navbar while scrolling down
-      setshow(false);
-    }
-    else{
-      //unhiding the navbar
-      setshow(true);
-    }
-    setlastscrolly(window.scrollY);
-  }
-
-  useEffect(()=>{
-    window.addEventListener("scroll",ControlNavbar);
-    return () =>{
-    window.removeEventListener("scroll",ControlNavbar)
-    };
-  },[lastscrollY])
+  
  
  
   const handlescroll = (id) =>{
@@ -50,10 +32,11 @@ const Navbar = () => {
   return (
 
 
-        <div className={`fixed  xl:flex  xl:justfiy-center flex  justify-center  font-[Poppins] text-white  z-50 right-0 top-0 left-0  items-center h-16 md:h-18 w-full  ${show ? "opacity-100 translate-y-0":"opacity-0 invisible"}   nav-style text-2xl   p-5 md:p-4 lg:p-4 xl:p-4 `}>
-            {/* <p className='text-[var(--foreground)] flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p> */}
-            
-            <nav className={` justify-center border-sky-300 border  lg:flex   items-center flex   rounded-4xl px-5 backdrop-blur-3xl duration-400 transfrom-transition  py-2 z-50 ${ show ? " translate-y-0   ": " -translate-y-full   " }`} > 
+        <div className={`fixed  xl:flex   w-fit xl:justfiy-center backdrop-blur-3xl flex  justify-between  font-[Poppins] text-white  z-50 right-0 top-0 left-0  items-center h-16 md:h-18 w-full    nav-style text-2xl   p-5 md:p-4 lg:p-4 xl:p-4 `}>
+            <p className='text-[var(--foreground)]  flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p>
+             <div>
+
+            <nav className= "justify-center   lg:flex   items-center flex   rounded-4xl px-5  duration-400 transfrom-transition  py-2 z-50 " > 
 
             <ul className=' text-base flex  lg:flex   justify-between  xl:text-xl lg:text-xl left-0 items-center gap-2 md:gap-6  '>
 
@@ -72,6 +55,7 @@ const Navbar = () => {
             </ul>
               </nav>
            
+             </div>
            
             
         </div>

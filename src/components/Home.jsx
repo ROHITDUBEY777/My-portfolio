@@ -4,7 +4,7 @@ import Hero3D from './sections/Hero3D'
 
 const Home = () => {
   return (
-    <div id='Home' className='flex flex-col  justify-center items-center  h-screen relative'>
+    <div id='Home' className='flex fixed flex-col  justify-center items-center  h-screen relative'>
       <div className="overlay-model absolute w-full h-full lg:h-[150vh]  pointer-events-none z-10"></div>
       <div className="min-h-screen w-full bg-black relative">
   Black Grid with White Dots Background
