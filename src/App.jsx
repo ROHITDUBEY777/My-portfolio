@@ -5,7 +5,7 @@ import Navbar from "./components/sections/Navbar"
 import About from "./components/sections/About"
 // import MySkills from "./components/sections/MySkills"
 import Projects from "./components/sections/Projects"
-import Cursor from "./components/sections/Cursor"
+
 
 import Resume from "./components/sections/Resume"
 import { useEffect } from "react"
@@ -25,7 +25,7 @@ function App() {
       ScrollSmoother.create({
         // wrapper:"#smooth-wrapper",
         content:"#smooth-content",
-        smooth:2,
+        smooth:1,
         effects:true,
       })
     }
@@ -35,7 +35,7 @@ function App() {
     <> 
        
       <Router>
-       <Cursor />
+     
       
  <Navbar />
        {/* <div id="smooth-wrapper"> */}
@@ -48,8 +48,7 @@ function App() {
        <Routes>
        
 
-      <Route path="/" element={
-        <>
+      <Route path="/" element={        <>
  
      
 

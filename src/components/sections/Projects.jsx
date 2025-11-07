@@ -19,11 +19,11 @@ const Projects = () => {
       </p>
 
       {/* Projects Grid */}
-      <div className="flex flex-wrap justify-center gap-12 py-12">
+      <div className="flex flex-wrap justify-center   gap-12 py-12">
         {projectsobj.map((item) => (
           <div
             key={item.id}
-            className="w-full sm:w-72 md:w-80 lg:w-96 bg-gradient-to-br from-[#0f172a] to-[#1e293b] rounded-2xl shadow-xl hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-2"
+            className="w-full sm:w-72 md:w-80 lg:w-96 bg-neutral-800 rounded-2xl shadow-xl hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-2"
           >
             {/* Project Title */}
             <p className="text-center text-lg lg:text-2xl font-semibold text-cyan-400 mt-6">

@@ -76,7 +76,7 @@ const Contactform = () => {
         <button
           type="submit"
           onSubmit={(e)=>e.preventDefault()}
-          className="btn-2 hover:text-black  hover:border-white duration-200 border px-4 py-2"
+          className="shadow-2xl  block border-3  duration-400 hover:-translate-y-2 hover:shadow-cyan-500/40  border-white  transition-all   hover:text-black hover:bg-cyan-400 cursor-pointer  hover:border-white duration-200 border px-4 py-2"
         >
           {" "}
           Send{" "}
