@@ -32,13 +32,13 @@ const Navbar = () => {
   return (
 
 
-        <div className={`fixed  xl:flex   w-fit xl:justfiy-center backdrop-blur-3xl flex  justify-between  font-[Poppins] text-white  z-50 right-0 top-0 left-0  items-center h-16 md:h-18 w-full    nav-style text-2xl   p-5 md:p-4 lg:p-4 xl:p-4 `}>
-            <p className='text-[var(--foreground)]  flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p>
+        <div className={`fixed  xl:flex   flex-col md:flex-row xl:justfiy-center backdrop-blur-3xl flex  justify-around   font-[Poppins] text-white  z-50 right-0 top-0 left-0  items-center h-21 md:h-18 w-full    nav-style text-2xl   p-5 md:p-4 lg:p-4 xl:p-4 `}>
+            <p className='text-[var(--foreground)] text-xl flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p>
              <div>
 
             <nav className= "justify-center   lg:flex   items-center flex   rounded-4xl px-5  duration-400 transfrom-transition  py-2 z-50 " > 
 
-            <ul className=' text-base flex  lg:flex   justify-between  xl:text-xl lg:text-xl left-0 items-center gap-2 md:gap-6  '>
+            <ul className=' text-base flex  lg:flex mb-2  justify-between  xl:text-xl lg:text-xl left-0 items-center gap-2 md:gap-6  '>
 
                 <li className="bg-gradient-to-b hover:text-[#0ea5e9] cursor-pointer transition duration-300 " onClick={()=>handlescroll('Home')}  >
                 Home</li>
