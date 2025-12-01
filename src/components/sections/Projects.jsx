@@ -39,7 +39,9 @@ const Projects = () => {
 
             {/* Live Link Button */}
             <div className="flex flex-row gap-6 justify-center mt-4">
-              <a
+              {item.livelink && (
+
+                <a
                 href={item.livelink}
                 target="_blank"
                 rel="noreferrer"
@@ -47,11 +49,12 @@ const Projects = () => {
               >
                 🔗 Live Link
               </a>
+            )}
               <a
-                href={item.github}
-                target="_blank"
-                rel="noreferrer"
-                className="px-6 py-2 border border-cyan-400 text-cyan-300 rounded-xl hover:bg-cyan-400 hover:text-black transition duration-300"
+              href={item.github}
+              target="_blank"
+              rel="noreferrer"
+              className="px-6 py-2 border border-cyan-400 text-cyan-300 rounded-xl hover:bg-cyan-400 hover:text-black transition duration-300"
               >
                 Github
               </a>
