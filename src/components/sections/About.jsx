@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div id="About">
       {" "}
-      <div className=" w-full  flex flex-col  text-center items-center mt-34  text-white        md:justify-between    " >
+      <div className=" w-full  flex flex-col z-0 text-center items-center   text-white        md:justify-between    " >
         
         <div className=" w-2xl    hover:scale-105 duration-400  rounded   text-center   py-4 ">
 
@@ -20,7 +20,7 @@ const About = () => {
         </p>
         <h1 className="roboto text-2xl  md:text-4xl     lg:text-4xl xl:text-4xl font-[Roboto] my-3  ">Hi, I'M ROHIT DUBEY</h1>
         <p className="opacity-80   text-sm px-40 md:px-0      md:text-xl text-center   ">
-          I'm proficient in React-JS, Tailwind CSS, and CSS, with a strong
+          I'm proficient in React-JS, Tailwind CSS,Node js and Express js, with a strong
           passion for learning and exploring newer technologies. I enjoy
           building sleek, responsive web applications and constantly improving
           my skill set.

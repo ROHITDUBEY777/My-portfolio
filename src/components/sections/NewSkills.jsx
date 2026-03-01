@@ -11,8 +11,9 @@ import { FaJs } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaJava } from "react-icons/fa";
-
-
+import { FaNodeJs } from "react-icons/fa6";
+import { SiMysql } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
 const NewSkills = () => {
   return (
     <div>
@@ -26,28 +27,36 @@ const NewSkills = () => {
       <div className="  w-full      pointer-events-none  rounded-md ">
           
             <div  className="  ">
-              <div className="logo-div2 relative  py-5 h-full flex  gap-10 md:gap-20    items-center w-full overflow-hidden">
+              <div className="logo-div2 relative  py-5 h-full flex gap-3   md:gap-20    items-center w-full overflow-hidden">
                 {/* <div className="bg-gradient-to-r from-black to-transparent absolute left-0 top-0 bottom-0 z-20 h-full  md:w-1/6"></div>
                 <div className="bg-gradient-to-l from-black to-transparent absolute right-0 top-0 bottom-0 z-20 h-full  md:w-1/6"></div> */}
-                <div  className="logo-slide2  text-8xl items-center justify-center gap-6    md:gap-20 h-[8rem] md:h-[11rem]  flex w-full">
+                <div  className="logo-slide2  text-8xl items-center justify-center gap-3   md:gap-20 h-[8rem] md:h-[11rem]  flex w-full">
                  <FaJs />
                   <FaReact />
                   <FaFigma />
                 <FaCss3Alt/>
+                    <FaNodeJs />
                   <RiTailwindCssFill />
+                  <DiMongodb />
                   <FaHtml5 />
                   <FaGithub />
                   <FaJava />
+                  <SiMysql />
+              
                 </div>
-                <div  className="logo-slide2    text-8xl items-center justify-center gap-6  md:gap-20    md:h-[11rem]  flex w-full">
+                <div  className="logo-slide2    text-8xl items-center justify-center gap-3  md:gap-20    md:h-[11rem]  flex w-full">
                 <FaJs />
                   <FaReact />
                   <FaFigma />
                 <FaCss3Alt/>
+                 <FaNodeJs />
                   <RiTailwindCssFill />
                   <FaHtml5 />
+                  <DiMongodb />
                   <FaGithub />
                      <FaJava />
+                     <SiMysql />
+                    
                 </div>
               </div>
             </div>
