@@ -18,10 +18,10 @@ const NewSkills = () => {
   return (
     <div>
      
-       <div className="flex mt-52 flex-wrap gap-10 md:ml-4  xl:ml-0 justify-center   "> 
-        <p id="Skills" className=" flex  flex-col md:text-5xl lg:text-5xl xl:text-5xl text-3xl text-center font-bold     font-[Poppins]    text-[var(--foreground)]  w-full     "> Skills & Technologies </p>
+       <div className="flex flex-wrap gap-10 md:ml-4  xl:ml-0 justify-center   "> 
+        <p id="Skills" className=" flex  flex-col md:text-5xl lg:text-5xl xl:text-5xl text-3xl text-center font-bold        text-[var(--foreground)]  w-full     "> Skills & Technologies </p>
      
-         <p className="absolute flex flex-col text-center mt-9 mb-4 md:mt-16 text-base md:text-xl ">Explore the skills I've gained through my projects and experiences.</p>
+         <p className="absolute flex flex-col text-center opacity-70 mt-9 mb-4 md:mt-16 text-base md:text-xl ">Explore the skills I've gained through my projects and experiences.</p>
         
         
       <div className="  w-full      pointer-events-none  rounded-md ">

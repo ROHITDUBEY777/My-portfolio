@@ -44,7 +44,7 @@ function App() {
         <div id="smooth-wrapper">
           <div id="smooth-content">
 
-            <main className="relative min-h-screen text-white bg-[var(--background)] overflow-hidden">
+            <main className="relative min-h-screen space text-white bg-black overflow-hidden">
 
               <Routes>
 
@@ -52,7 +52,7 @@ function App() {
                   path="/"
                   element={
                     <>
-                      <Home />
+                      {/* <Home /> */}
                       <About />
                       <NewSkills />
                       <Projects />

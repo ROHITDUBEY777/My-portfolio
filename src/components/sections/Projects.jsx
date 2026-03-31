@@ -8,12 +8,12 @@ const Projects = () => {
       className="flex flex-col justify-center min-h-screen mt-32 px-6"
     >
       {/* Title */}
-      <h1 className="text-center text-3xl md:text-5xl lg:text-5xl font-bold text-[var(--foreground)] fonr-[Poppins]  drop-shadow-lg">
+      <h1 className="text-center text-3xl md:text-5xl lg:text-5xl font-bold text-[var(--foreground)]   drop-shadow-lg">
         Projects 
       </h1>
 
       {/* Subtitle */}
-      <p className="text-center mt-3  text-sm md:text-lg">
+      <p className="text-center mt-3 opacity-70 text-sm md:text-lg">
         Check out some of the projects I've built — I’d love to hear what you
         think!
       </p>
@@ -23,7 +23,7 @@ const Projects = () => {
         {projectsobj.map((item) => (
           <div
             key={item.id}
-            className="w-full sm:w-72 md:w-80 lg:w-96 bg-neutral-800 rounded-2xl shadow-xl hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-2"
+            className=" sm:w-72 md:w-80 lg:w-96  border-cyan-400 border-1 rounded-2xl shadow-xl hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-2"
           >
             {/* Project Title */}
             <p className="text-center text-lg lg:text-2xl font-semibold text-cyan-400 mt-6">
@@ -47,7 +47,7 @@ const Projects = () => {
                 rel="noreferrer"
                 className="px-6 py-2 border cursor-pointer border-cyan-400 text-cyan-300 rounded-xl hover:bg-cyan-400 hover:text-black transition duration-300"
               >
-                🔗 Live Link
+                 Live Link
               </a>
             )}
               <a
@@ -61,7 +61,7 @@ const Projects = () => {
             </div>
 
             {/* Description */}
-            <p className="text-sm text-gray-300 text-center px-6 py-6">
+            <p className="text-sm text-gray-300 opacity-70 text-center px-6 py-6">
               {item.progdesc}
             </p>
           </div>

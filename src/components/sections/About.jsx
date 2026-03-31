@@ -10,17 +10,17 @@ const About = () => {
   return (
     <div id="About">
       {" "}
-      <div className=" w-full  flex flex-col z-0 text-center items-center   text-white        md:justify-between    " >
+      <div className=" w-full  flex flex-col mt-29 md:mt-0  md:flex-row  px-20  min-h-screen z-0 text-center items-center   text-white        md:justify-between    " >
         
         <div className=" w-2xl    hover:scale-105 duration-400  rounded   text-center   py-4 ">
 
-        <p className=" text-[var(--foreground)] mt-11   text-3xl font-bold    md:text-5xl lg:text-5xl xl:text-5xl   font-[Poppins] items-center ">
-          {" "}
-          About{" "}
+        <p className=" text-[var(--foreground)] mt-11   text-3xl font-bold    md:text-5xl lg:text-5xl xl:text-5xl  items-center ">
+          
+          About Me
         </p>
         <h1 className="roboto text-2xl  md:text-4xl     lg:text-4xl xl:text-4xl font-[Roboto] my-3  ">Hi, I'M ROHIT DUBEY</h1>
         <p className="opacity-80   text-sm px-40 md:px-0      md:text-xl text-center   ">
-          I'm proficient in React-JS, Tailwind CSS,Node js and Express js, with a strong
+         A Website Developer as I'm proficient in React-JS, Tailwind CSS,Node js and Express js [MERN STACK], with a strong
           passion for learning and exploring newer technologies. I enjoy
           building sleek, responsive web applications and constantly improving
           my skill set.
@@ -51,7 +51,7 @@ const About = () => {
               
            
             ))} */}
-            <img src={photo}   className="rounded-full  flex flex-col md:w-1/4 w-1/3 "   />
+            <img src={photo}   className="rounded-full  flex flex-col md:w-1/4 w-1/1 "   />
          </div>  
             {/* <div className=" flex flex-col border w-full md:scale-100 justify-between items-end ">
 

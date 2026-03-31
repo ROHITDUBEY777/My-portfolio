@@ -13,7 +13,7 @@ const Contact = () => {
 
    
 
-        <p id="Contact" className="flex flex-col relative py-5  z-10  text-base  px-6 md:px-10 md:text-base lg:text-xl xl:text-xl  ">
+        <p id="Contact" className="flex flex-col opacity-70 relative py-5  z-10  text-base  px-6 md:px-10 md:text-base lg:text-xl xl:text-xl  ">
           Feel free to contact me if you have any questions or just want to
           connect with me.{" "}
         </p>
@@ -35,19 +35,7 @@ const Contact = () => {
             <img src={Image} alt="" className=" w-full" />
 
             </div>
-            <div
-    className="absolute inset-0 opacity-70 z-0 "
-    style={{
-      background: "#000000",
-      backgroundImage: `
-        linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px),
-        radial-gradient(circle, rgba(255,255,255,0.6) 1px, transparent 1px)
-      `,
-      backgroundSize: "20px 20px, 20px 20px, 20px 20px",
-      backgroundPosition: "0 0, 0 0, 0 0",
-    }}
-  />
+           
           </div>
           </div>
        </div>

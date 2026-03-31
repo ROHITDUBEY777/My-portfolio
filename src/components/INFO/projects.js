@@ -2,15 +2,15 @@
 // import Weather from '../assets/weatherlogo.jpg'
 import Dandoo from "../assets/Dandoo.png"
 import chatbotimg from "../assets/chatbot.png"
-import password from "../assets/password.png"
-import weather from  "../assets/weather.png"
+// import password from "../assets/password.png"
+// import weather from  "../assets/weather.png"
 import textutils from "../assets/textutils.png"
 import CodeEditor from "../assets/codeeditor.png"
 import justPost from "../assets/justPost.png"
 export  const  projectsobj = [ 
     {
      id:1,
-     projname:"justPost",
+     projname:"JustPost",
     backgroundUrl:justPost,
      progdesc:"Built JustPost, a blockchain-powered anonymous social platform with secure room-based peer-to-peer file transfer, preventing IP exposure and ensuring data integrity through smart contracts.",
      livelink:"https://blockchain-10-84ub.onrender.com/",
@@ -51,23 +51,8 @@ export  const  projectsobj = [
      backgroundUrl:textutils
                 
     },
-    {
-     id:6,
-     projname:"WeatherApi",
-     progdesc:"Weatherly is a simple, responsive web application that allows users to check the current weather conditions for any city around the world. It fetches real-time weather data using a public API (like OpenWeatherMap) and presents it in a clean, intuitive user interface.",
-     backgroundUrl:weather,
-     github:"https://github.com/ROHITDUBEY777/WeatherApi",
-     livelink:""
-    
-    },
-    {
-     id:7,
-     projname:"Random-Pass Generator",
-     progdesc:"Random Password Generator is a lightweight, fast, and easy-to-use web application built using HTML, CSS, and JavaScript. It allows users to instantly generate strong, random passwords based on selected criteria, making it a handy tool for improving online security and personal password management.",
-     github:"https://github.com/ROHITDUBEY777/Random-Password-Generator-",
-     livelink:"",
-     backgroundUrl:password
-    },
+   
+  
      
     
 ]

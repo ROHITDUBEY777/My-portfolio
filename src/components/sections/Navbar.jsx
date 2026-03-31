@@ -29,13 +29,13 @@ const Navbar = () => {
   return (
 
 
-    <div className={`fixed top-0 left-0 w-full xl:flex flex-col md:flex-row xl:justfiy-center backdrop-blur-3xl flex justify-around z-50 font-[Poppins] text-white items-center h-21 md:h-18 nav-style text-2xl p-5 md:p-4 lg:p-4 xl:p-4 `}>
-      <p className='text-[var(--foreground)] text-xl flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p>
-      <div>
+    <div className={`fixed top-0 left-0 mt-2 space   xl:flex   flex-col  md:flex-row xl:justfiy-center w-full   border-white   flex justify-around z-50 font-[Poppins] text-white items-center h-21 md:h-18 nav-style   `}>
+      <div className='w-fit  flex-col md:flex-row  py-3  md:gap-10     text-center items-center   my-auto rounded-4xl justify-between  px-5  backdrop-blur-md   border-white  flex  '>
+      <p className='text-[var(--foreground)]  text-base  md:text-xl space  flex items-start  font-bold opacity-100 transition duration-300'>ROHIT DUBEY</p>
 
-        <nav className="justify-center   lg:flex   items-center flex   rounded-4xl px-5  duration-400 transfrom-transition  py-2 z-50 " >
+        <nav className="   lg:flex   items-center flex px-4    duration-400 transfrom-transition  " >
 
-          <ul className=' text-base flex  lg:flex mb-2  justify-between  xl:text-xl lg:text-xl left-0 items-center gap-2 md:gap-6  '>
+          <ul className='  flex  lg:flex   justify-between opacity-80  xl:text-xl lg:text-xl  left-0 items-center gap-3 md:gap-5   '>
 
             <li className="bg-gradient-to-b hover:text-[#0ea5e9] cursor-pointer transition duration-300 " onClick={() => handlescroll('Home')}  >
               Home</li>
