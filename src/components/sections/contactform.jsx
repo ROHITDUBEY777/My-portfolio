@@ -1,42 +1,60 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import {supabase } from '../../lib/supabaseClient'
 
 const Contactform = () => {
   const [form, setform] = useState({ name: "", email: "", message: "" });
-  const [status, setstatus] = useState("");
+  const [status, setstatus] = useState(null);
 
   const handleChange = (e) => {
     setform({ ...form, [e.target.name]: e.target.value });
   };
 
-  const sendemail = (e) => {
+  const handlesubmit = async(e) =>{
     e.preventDefault();
+    setstatus('Sending...')
+   
+    const {error} = await supabase
+        .from('contacts')
+        .insert([form])
+    if(error){
+      setstatus('error')
+      console.error(error)
+    } else{
+      setstatus('success')
+      setform({name:'',email:'',message:''})
+    }
 
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setstatus("Message sent successfully!");
-          setform({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          console.error("Error while sending message", error);
-          setstatus("Failed to send message.");
-        }
-      );
-  };
+  
+
+    // emailjs
+    //   .send(
+    //     import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    //     import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    //     form,
+    //     import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    //   )
+    //   .then(
+    //     () => {
+    //       setstatus("Message sent successfully!");
+    //       setform({ name: "", email: "", message: "" });
+    //     },
+    //     (error) => {
+    //       console.error("Error while sending message", error);
+    //       setstatus("Failed to send message.");
+    //     }
+    //   );
+ 
+  }
+
+  
 
   return (
     <div className=" md:justify-between   mb-10 items-center  flex   flex-row lg:flex-row  md:flex-col     mt-4  gap-5    ">
      
       <form
         id="Contact"
-        onSubmit={sendemail}
+        onSubmit={handlesubmit}
         className="space-y-2    md:h-fit w-full "
       >
         <p className="md:text-base lg:text-xl xl:text-xl text-base">
@@ -76,7 +94,7 @@ const Contactform = () => {
         <button
           type="submit"
           onSubmit={(e)=>e.preventDefault()}
-          className="shadow-2xl  block border-3  duration-400 hover:-translate-y-2 hover:shadow-cyan-500/40  border-white  transition-all   hover:text-black hover:bg-cyan-400 cursor-pointer  hover:border-white duration-200 border px-4 py-2"
+          className="shadow-2xl  block border-3   hover:-translate-y-2 hover:shadow-cyan-500/40  border-white  transition-all   hover:text-black hover:bg-cyan-400 cursor-pointer  hover:border-white duration-200 border px-4 py-2"
         >
           {" "}
           Send{" "}
