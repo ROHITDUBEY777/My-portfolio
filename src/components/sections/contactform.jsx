@@ -27,23 +27,23 @@ const Contactform = () => {
 
   
 
-    // emailjs
-    //   .send(
-    //     import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    //     import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-    //     form,
-    //     import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    //   )
-    //   .then(
-    //     () => {
-    //       setstatus("Message sent successfully!");
-    //       setform({ name: "", email: "", message: "" });
-    //     },
-    //     (error) => {
-    //       console.error("Error while sending message", error);
-    //       setstatus("Failed to send message.");
-    //     }
-    //   );
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setstatus("Message sent successfully!");
+          setform({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          console.error("Error while sending message", error);
+          setstatus("Failed to send message.");
+        }
+      );
  
   }
 
