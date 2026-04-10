@@ -8,11 +8,11 @@ import { IoLogoInstagram } from "react-icons/io5";
 
 const About = () => {
   return (
-    <div id="About">
+    <div id="Home">
       {" "}
-      <div className=" w-full  flex flex-col mt-29 md:mt-0  md:flex-row  px-20  min-h-screen z-0 text-center items-center   text-white        md:justify-between    " >
+      <div className=" w-full  flex flex-col   justify-center  px-20  min-h-screen z-0 text-center items-center   text-white        md:justify-center    " >
         
-        <div className=" w-2xl    hover:scale-105 duration-400  rounded   text-center   py-4 ">
+        <div className=" w-2xl     duration-400  rounded   text-center   py-4 ">
 
         <p className=" text-[var(--foreground)] mt-11   text-3xl font-bold    md:text-5xl lg:text-5xl xl:text-5xl  items-center ">
           
@@ -40,6 +40,9 @@ const About = () => {
           </a>
           
             </div>
+            <div className="flex text-center items-center flex-col">
+              <button className="shadow-2xl  block border-3  duration-400 hover:-translate-y-2 hover:shadow-cyan-500/40  border-white  transition-all   hover:text-black hover:bg-cyan-400  cursor-pointer md:text-2xl  mt-4 max-w-fit px-4 py-2 min-w-1/5  h-16 ">Let's Connect</button>
+            </div>
             <div></div>
           
           
@@ -51,7 +54,7 @@ const About = () => {
               
            
             ))} */}
-            <img src={photo}   className="rounded-full  flex flex-col md:w-1/4 w-1/1 "   />
+            {/* <img src={photo}   className="rounded-full  flex flex-col md:w-1/4 w-1/1 "   /> */}
          </div>  
             {/* <div className=" flex flex-col border w-full md:scale-100 justify-between items-end ">
 
