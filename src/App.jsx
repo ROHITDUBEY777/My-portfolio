@@ -7,6 +7,7 @@ import Resume from "./components/sections/Resume";
 import Footer from "./components/sections/Footer";
 import Contact from "./components/sections/Contact";
 import NewSkills from "./components/sections/NewSkills";
+import Certifications from "./components/sections/Certifications";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -56,6 +57,7 @@ function App() {
                       <About />
                       <NewSkills />
                       <Projects />
+                      {/* <Certifications /> */}
                       <Resume />
                       <Contact />
                       <Footer />

@@ -37,6 +37,7 @@ const Navbar = () => {
             <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Home')}>Home</li>
             <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Skills')}>Skills</li>
             <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Projects')}>Projects</li>
+            {/* <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Certifications')}>Certifications</li> */}
             <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Resume')}>Resume</li>
             <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Contact')}>Contact</li>
           </ul>

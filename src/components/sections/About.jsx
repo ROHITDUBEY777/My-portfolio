@@ -48,14 +48,14 @@ const About = () => {
         </motion.h1>
 
         <motion.h2 variants={itemVariants} className="text-xl md:text-2xl text-gray-400 font-medium mb-6">
-          Full Stack Specialist • MERN Stack
+           • <span className="text-cyan-400">MERN</span>  Stack Developer
         </motion.h2>
 
         <motion.p 
           variants={itemVariants}
           className="text-gray-400 text-base md:text-xl leading-relaxed max-w-2xl mx-auto mb-10"
         >
-          I partner with startups and businesses to build high-performance, sleek, and scalable web applications. Proficient in React, Tailwind CSS, Node.js, and Express, I am passionate about crafting modern digital experiences.
+          MERN stack developer passionate about building impactful web applications. I enjoy solving real-world problems, shipping end-to-end features, and working in fast-paced environments where I can learn and contribute. Proficient in React, Tailwind CSS, Node.js, and Express.
         </motion.p>
 
         <motion.div variants={itemVariants} className="flex space-x-6 mb-10">
