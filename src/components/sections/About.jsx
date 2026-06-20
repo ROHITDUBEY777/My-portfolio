@@ -36,7 +36,7 @@ const About = () => {
       >
         <motion.div variants={itemVariants} className="mb-6">
           <span className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm md:text-base font-medium tracking-wide text-cyan-300 backdrop-blur-md">
-            Freelance Web Developer
+             MERN Stack Developer
           </span>
         </motion.div>
 
@@ -47,15 +47,13 @@ const About = () => {
           Hi, I'm <span className="text-cyan-400">Rohit Dubey</span>
         </motion.h1>
 
-        <motion.h2 variants={itemVariants} className="text-xl md:text-2xl text-gray-400 font-medium mb-6">
-           • <span className="text-cyan-400">MERN</span>  Stack Developer
-        </motion.h2>
+       
 
         <motion.p 
           variants={itemVariants}
           className="text-gray-400 text-base md:text-xl leading-relaxed max-w-2xl mx-auto mb-10"
         >
-          MERN stack developer passionate about building impactful web applications. I enjoy solving real-world problems, shipping end-to-end features, and working in fast-paced environments where I can learn and contribute. Proficient in React, Tailwind CSS, Node.js, and Express.
+          MERN stack developer passionate about building impactful web applications. I enjoy solving real-world problems, shipping end-to-end features, and working in fast-paced environments where I can learn and contribute.
         </motion.p>
 
         <motion.div variants={itemVariants} className="flex space-x-6 mb-10">
@@ -66,10 +64,15 @@ const About = () => {
         </motion.div>
 
         <motion.div variants={itemVariants}>
-          <button className="group relative px-8 py-3 bg-cyan-500 text-white rounded-full font-medium overflow-hidden shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.6)] hover:-translate-y-1 cursor-pointer">
+         <a target="blank" href="https://x.com/rohit_dubey_07">
+           <button  className="group relative px-8 py-3 bg-cyan-500 text-white rounded-full font-medium overflow-hidden shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all duration-300 hover:shadow-[0_0_30px_rgba(6,182,212,0.6)] hover:-translate-y-1 cursor-pointer">
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out rounded-full"></div>
-            <span className="relative z-10 flex items-center gap-2">Let's Connect</span>
+         
+           <span  className="relative z-10 flex items-center gap-2">Let's Connect</span>
+           
+          
           </button>
+          </a>
         </motion.div>
       </motion.div>
     </section>

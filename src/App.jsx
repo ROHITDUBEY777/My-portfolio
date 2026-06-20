@@ -57,7 +57,7 @@ function App() {
                       <About />
                       <NewSkills />
                       <Projects />
-                      {/* <Certifications /> */}
+                      <Certifications />
                       <Resume />
                       <Contact />
                       <Footer />

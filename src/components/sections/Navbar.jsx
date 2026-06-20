@@ -30,14 +30,16 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between px-6 py-4">
         <p className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-white cursor-pointer" onClick={() => handlescroll('Home')}>
+          
           Rohit Dubey 
         </p>
+       
         <nav>
           <ul className="  space-x-8 hidden md:flex md:text-base font-medium text-white/70">
             <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Home')}>Home</li>
             <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Skills')}>Skills</li>
             <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Projects')}>Projects</li>
-            {/* <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Certifications')}>Certifications</li> */}
+            <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Certifications')}>Certifications</li>
             <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Resume')}>Resume</li>
             <li className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Contact')}>Contact</li>
           </ul>
@@ -55,6 +57,7 @@ const Navbar = () => {
             <p className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Home')}>Home</p>
             <p className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Skills')}>Skills</p>
             <p className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Projects')}>Projects</p>
+            <p className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Certifications')}>Certifications</p>
             <p className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Resume')}>Resume</p>
             <p className="hover:text-cyan-400 transition-colors cursor-pointer" onClick={() => handlescroll('Contact')}>Contact</p>
           

@@ -6,14 +6,14 @@ import chatbotimg from "../assets/chatbot.png"
 // import weather from  "../assets/weather.png"
 import textutils from "../assets/textutils.png"
 import CodeEditor from "../assets/codeeditor.png"
-import justPost from "../assets/justPost.png"
+import justPost from "../assets/justPost1.png"
 export  const  projectsobj = [ 
     {
      id:1,
      projname:"JustPost",
     backgroundUrl:justPost,
      progdesc:"Built JustPost, a blockchain-powered anonymous social platform with secure room-based peer-to-peer file transfer, preventing IP exposure and ensuring data integrity through smart contracts.",
-     livelink:"https://blockchain-10-84ub.onrender.com/",
+     livelink:"https://justpost-1.onrender.com/",
      github:"https://github.com/ROHITDUBEY777/JustPost.git",
      
     },
