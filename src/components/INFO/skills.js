@@ -11,6 +11,8 @@ const skills = [
     { id: 10, name: "MySQL" },
     { id: 11, name: "GitHub" },
     { id: 12, name: "Figma" },
+    {id:13,name:"Docker"},
+    
 ];
 
 export default skills;

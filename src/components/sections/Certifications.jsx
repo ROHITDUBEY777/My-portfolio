@@ -5,14 +5,14 @@ const Certifications = () => {
   return (
     <section
       id="Certifications"
-      className="min-h-screen flex flex-col items-center py-20 px-6"
+      className="min-h-screen flex  flex-col items-center py-20 px-6"
     >
       <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
         Certifications &{" "}
         <span className="text-cyan-400">Achievements</span>
       </h1>
 
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto grid grid-cols-1 px-25 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {certifications.map((item, index) => (
           <div
             key={index}
@@ -29,9 +29,9 @@ const Certifications = () => {
             />
              { item.link && (
     
-              <button className="cursor-pointer px-2 py-1 border rounded-md mt-2 hover:border-cyan-400" >
+              <button className="flex items-center gap-2 text-sm cursor-pointer font-medium mt-4 hover:-translate-y-1 duration-300 transition-transform text-white border border-white/20 px-8 py-2 rounded-full hover:bg-white hover:text-black " >
              <a target="blank" href={item.link} >
-              <h1>LINK</h1>
+              <h1 className="cursor-pointer">Link </h1>
               </a> 
               </button>
               

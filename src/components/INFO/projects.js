@@ -1,12 +1,9 @@
-// import pass from '../assets/pass.webp';
-// import Weather from '../assets/weatherlogo.jpg'
+
 import Dandoo from "../assets/Dandoo.png"
 import chatbotimg from "../assets/chatbot.png"
-// import password from "../assets/password.png"
-// import weather from  "../assets/weather.png"
 import textutils from "../assets/textutils.png"
 import CodeEditor from "../assets/codeeditor.png"
-import justPost from "../assets/justPost1.png"
+import justPost from "../assets/justpost.png"
 export  const  projectsobj = [ 
     {
      id:1,

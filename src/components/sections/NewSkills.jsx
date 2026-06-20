@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaFigma, FaReact, FaCss3Alt, FaJs, FaHtml5, FaJava } from "react-icons/fa";
+import { FaFigma, FaReact, FaCss3Alt, FaJs, FaHtml5, FaJava ,FaDocker,} from "react-icons/fa";
 import { FaGithub, FaNodeJs } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
@@ -20,6 +20,8 @@ const iconMap = {
   "MySQL": <SiMysql className="text-blue-400 group-hover:scale-110 transition-transform duration-300" size={40} />,
   "GitHub": <FaGithub className="text-white group-hover:scale-110 transition-transform duration-300" size={40} />,
   "Figma": <FaFigma className="text-pink-400 group-hover:scale-110 transition-transform duration-300" size={40} />,
+  "Docker": <FaDocker className="text-blue-600 group-hover:scale-110 transition-transform duration-300" size={40} />,
+
 };
 
 const NewSkills = () => {
