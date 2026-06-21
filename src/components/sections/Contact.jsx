@@ -16,7 +16,11 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-400 mb-6">
-            Let's Work Together
+            Let's Work {""}
+            <span className="text-cyan-400">
+            Together
+              
+            </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Have a project in mind or just want to chat? Reach out to me below and I'll get back to you as soon as possible.

@@ -12,11 +12,11 @@ const Certifications = () => {
         <span className="text-cyan-400">Achievements</span>
       </h1>
 
-      <div className="container mx-auto grid grid-cols-1 px-25 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto grid grid-cols-1 md:px-25 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {certifications.map((item, index) => (
           <div
             key={index}
-            className="border border-white/20 rounded-xl bg-black/10 p-4 hover:border-cyan-400 transition-all duration-300"
+            className="border border-white/20 rounded-xl bg-zinc-400/10  p-4 hover:border-cyan-400 transition-all duration-300"
           >
             <h2 className="text-2xl  font-semibold text-center mb-4">
               {item.name}

@@ -10,7 +10,6 @@ import NewSkills from "./components/sections/NewSkills";
 import Certifications from "./components/sections/Certifications";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
 import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -18,10 +17,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-
     ScrollTrigger.getAll().forEach((t) => t.kill());
-
 
     const smootherInstance = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
@@ -31,7 +30,6 @@ function App() {
     });
 
     return () => {
-
       smootherInstance.kill();
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
@@ -39,38 +37,33 @@ function App() {
 
 
   return (
-    <>
-      <Router>
+    <Router>
+
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
         <Navbar />
-        <div id="smooth-wrapper">
-          <div id="smooth-content">
-
-            <main className="relative min-h-screen space text-white bg-black overflow-hidden">
-
-              <Routes>
-
-                <Route
-                  path="/"
-                  element={
-                    <>
-                      {/* <Home /> */}
-                      <About />
-                      <NewSkills />
-                      <Projects />
-                      <Certifications />
-                      <Resume />
-                      <Contact />
-                      <Footer />
-                    </>
-                  }
-                />
-              </Routes>
-            </main>
-
-          </div>
+          <main className="relative min-h-screen text-white bg-black overflow-hidden">
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    {/* <Home /> */}
+                    <About />
+                    <NewSkills />
+                    <Projects />
+                    <Certifications />
+                    <Resume />
+                    <Contact />
+                    <Footer />
+                  </>
+                }
+              />
+            </Routes>
+          </main>
         </div>
-      </Router>
-    </>
+      </div>
+    </Router>
   );
 }
 

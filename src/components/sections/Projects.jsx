@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section id="Projects" className="relative py-24 px-6 md:px-20 overflow-hidden">
       {/* Background gradients */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+      <div className="absolute top-1/2 left-0 w-96 h-96  bg-purple-500/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
       
       <div className="max-w-7xl mx-auto">
         <motion.div 
@@ -22,7 +22,7 @@ const Projects = () => {
           <p className="text-gray-400 text-lg">Check out some of the projects I've built recently.</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 gap-8 lg:gap-4 xl:gap-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 md:gap-4 gap-8 lg:gap-4 xl:gap-10 ">
           {projectsobj.map((item, index) => (
             <motion.div
               key={item.id}
@@ -30,7 +30,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="group relative bg-white/5   border-white/10 rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-colors duration-500 backdrop-blur-sm shadow-xl flex flex-col"
+              className="group relative bg-white/5    border-white/20 border rounded-2xl overflow-hidden hover:border-cyan-400/50 transition-colors duration-500 backdrop-blur-sm shadow-xl flex flex-col"
             >
               <div className="w-full  h-56  overflow-hidden  bg-black/20">
                 <img
