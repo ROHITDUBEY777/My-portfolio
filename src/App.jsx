@@ -39,9 +39,9 @@ function App() {
   return (
     <Router>
 
+              <Navbar />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-        <Navbar />
           <main className="relative min-h-screen text-white bg-black overflow-hidden">
             <Routes>
               <Route
