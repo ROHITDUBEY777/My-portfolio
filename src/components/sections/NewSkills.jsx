@@ -6,9 +6,11 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import skills from "../INFO/skills";
+import { SiTypescript } from "react-icons/si";
 
 const iconMap = {
   "React": <FaReact className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" size={40} />,
+  "TypeScript": <SiTypescript className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" size={40} />,
   "JavaScript": <FaJs className="text-yellow-400 group-hover:scale-110 transition-transform duration-300" size={40} />,
   "Node.js": <FaNodeJs className="text-green-500 group-hover:scale-110 transition-transform duration-300" size={40} />,
   "Express.js": <FaNodeJs className="text-gray-400 group-hover:scale-110 transition-transform duration-300" size={40} />,
@@ -21,7 +23,6 @@ const iconMap = {
   "GitHub": <FaGithub className="text-white group-hover:scale-110 transition-transform duration-300" size={40} />,
   "Figma": <FaFigma className="text-pink-400 group-hover:scale-110 transition-transform duration-300" size={40} />,
   "Docker": <FaDocker className="text-blue-600 group-hover:scale-110 transition-transform duration-300" size={40} />,
-
 };
 
 const NewSkills = () => {

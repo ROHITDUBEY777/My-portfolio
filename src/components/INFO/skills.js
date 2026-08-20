@@ -12,6 +12,7 @@ const skills = [
     { id: 11, name: "GitHub" },
     { id: 12, name: "Figma" },
     {id:13,name:"Docker"},
+    {id:14,name:"TypeScript"}
     
 ];
 

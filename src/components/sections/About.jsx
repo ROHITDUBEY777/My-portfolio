@@ -36,7 +36,7 @@ const About = () => {
       >
         <motion.div variants={itemVariants} className="mb-6">
           <span className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm md:text-base font-medium tracking-wide text-cyan-300 backdrop-blur-md">
-             MERN Stack Developer
+             Full Stack Developer
           </span>
         </motion.div>
 

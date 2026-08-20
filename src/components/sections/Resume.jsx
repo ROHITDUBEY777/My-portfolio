@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import myresume from '../assets/RohitDubeyResume.pdf';
+import myresume from '../assets/RohitDubeyNewResume.pdf';
 
 export default function Resume() {
   return (
